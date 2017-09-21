@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Javascript timezone issue with backend server in different zone - Haibo Yu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Today I met an problem when doing the test in the server from different timezone:  Client select a date(Say 2015-10-1 ) from the form, angular populate the datetime with new Date() from javascript and">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript timezone issue with backend server in different zone">
+<meta property="og:url" content="http://haiboyu.me/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/index.html">
+<meta property="og:site_name" content="Haibo Yu">
+<meta property="og:description" content="Today I met an problem when doing the test in the server from different timezone:  Client select a date(Say 2015-10-1 ) from the form, angular populate the datetime with new Date() from javascript and">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-21T23:19:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript timezone issue with backend server in different zone">
+<meta name="twitter:description" content="Today I met an problem when doing the test in the server from different timezone:  Client select a date(Say 2015-10-1 ) from the form, angular populate the datetime with new Date() from javascript and">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo logo-text" href="/">Haibo Yu</a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+          <a class="main-nav-link" href="/atom.xml">Rss</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://haiboyu.me"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-javascript-timezone-issue-with-backend-server-in-different-zone" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Javascript timezone issue with backend server in different zone
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/" class="article-date">
+  <time datetime="2015-10-02T21:09:27.000Z" itemprop="datePublished">2015-10-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java-Common/">Java Common</a><span>></span><a class="article-category-link" href="/categories/Java-Common/Seal/">Seal</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Today I met an problem when doing the test in the server from different timezone:</p>
+<ol>
+<li>Client select a date(Say 2015-10-1 ) from the form, angular populate the datetime with new Date() from javascript and pass it to server.</li>
+<li>After saving the object and then display it, it’s displayed as ‘2015-9-30 23:00:00’. And every time after doing this, we have 1 hour difference.<br>Then I realize this should be a timezone issue and check the document:</li>
+</ol>
+<p>“When populating the date and no timezone is specified, it default to use the local timezone from the client browser”.</p>
+<p>Since our QA server is from different timezone, we always has the 1 hour difference.</p>
+<p><strong>Solution:</strong></p>
+<p>We could have multiple solutions for this. But our requirement is pretty straightforward, we just want no matter which date the client selected, we have the same value saved to database. So I changed the value that we passed to server to be a string value(like ‘2015/10/1’) and parse the date from server side, instead of using the datatime long value.</p>
+<p>There also some other solution referred:</p>
+<p><a href="http://www.techrepublic.com/article/convert-the-local-time-to-another-time-zone-with-this-javascript/" target="_blank" rel="external">http://www.techrepublic.com/article/convert-the-local-time-to-another-time-zone-with-this-javascript/</a></p>
+<p><a href="http://momentjs.com/timezone/docs/" target="_blank" rel="external">http://momentjs.com/timezone/docs/</a></p>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/en/2016/04/28/e7-be-8e-e5-9b-bd-e8-b4-b9-e5-9f-8e-e4-b9-b0-e8-bd-a6-e5-b0-8f-e8-ae-b0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          美国费城买车小记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/en/2014/01/06/ejb3-0-e5-92-8c-ejb2-e7-9a-84-e5-8c-ba-e5-88-ab/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">EJB3.0 和 EJB2 的区别&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Haibo Yu&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

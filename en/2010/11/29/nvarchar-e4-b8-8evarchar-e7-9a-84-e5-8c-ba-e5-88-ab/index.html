@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>nvarchar与varchar的区别 - Haibo Yu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="nvarchar与varchar的区别&amp;amp;lt;/p&amp;gt; varchar[(n)]长度为   n   个字节的可变长度且非   Unicode   的字符数据。n必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nvarchar与varchar的区别">
+<meta property="og:url" content="http://haiboyu.me/en/2010/11/29/nvarchar-e4-b8-8evarchar-e7-9a-84-e5-8c-ba-e5-88-ab/index.html">
+<meta property="og:site_name" content="Haibo Yu">
+<meta property="og:description" content="nvarchar与varchar的区别&amp;amp;lt;/p&amp;gt; varchar[(n)]长度为   n   个字节的可变长度且非   Unicode   的字符数据。n必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-21T23:19:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="nvarchar与varchar的区别">
+<meta name="twitter:description" content="nvarchar与varchar的区别&amp;amp;lt;/p&amp;gt; varchar[(n)]长度为   n   个字节的可变长度且非   Unicode   的字符数据。n必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo logo-text" href="/">Haibo Yu</a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+          <a class="main-nav-link" href="/atom.xml">Rss</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://haiboyu.me"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-nvarchar-e4-b8-8evarchar-e7-9a-84-e5-8c-ba-e5-88-ab" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      nvarchar与varchar的区别
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/en/2010/11/29/nvarchar-e4-b8-8evarchar-e7-9a-84-e5-8c-ba-e5-88-ab/" class="article-date">
+  <time datetime="2010-11-29T15:51:15.000Z" itemprop="datePublished">2010-11-29</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Seal/">Seal</a><span>></span><a class="article-category-link" href="/categories/Seal/未分类/">未分类</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>nvarchar与varchar的区别&amp;lt;/p&gt;</p>
+<p>varchar[(n)]<br>长度为   n   个字节的可变长度且非   Unicode   的字符数据。n<br>必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n<br>个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char   varying   或<br>character   varying。</p>
+<p>nvarchar(n)<br>包含   n<br>个字符的可变长度   Unicode   字符数据。n   的值必须介于   1   与   4,000<br>之间。字节的存储大小是所输入字符个数的两倍。所输入的数据字符长度可以为零。nvarchar   在   SQL-92   中的同义词为<br>national   char   varying   和   national   character   varying。&amp;amp;nbsp;</p>
+<p>通俗一點就是varchar適合輸入英文和數字，nvarchar一般用做中文或其它語言的輸入，這樣到別的語系不會出現亂碼:))</p>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/en/2011/04/01/e4-b8-80-e4-b8-aa-e5-8f-a5-e5-8f-b7-e5-bc-95-e5-8f-91-e7-9a-84-e6-83-a8-e6-a1-88/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          一个句号引发的惨案
+        
+      </div>
+    </a>
+  
+  
+    <a href="/en/2008/05/09/interceptor-e4-b8-adonflushdirty-e5-87-bd-e6-95-b0-e6-89-a7-e8-a1-8c-e5-a4-9a-e6-ac-a1-e7-9a-84-e9-97-ae-e9-a2-98-ef-bc-88hibernate-e7-9a-84-e4-b8-80-e4-b8-aa-e5-b0-8fbug-ef-bc-89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Haibo Yu&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
