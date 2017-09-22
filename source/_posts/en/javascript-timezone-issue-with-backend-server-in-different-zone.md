@@ -4,7 +4,7 @@ id: 2707
 categories:
   - Java
 date: 2015-10-02 17:09:27
-tags:
+tags:Javascript
 ---
 
 Today I met an problem when doing the test in the server from different timezone:

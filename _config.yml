@@ -56,8 +56,14 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: other
 category_map:
+  Algorithm: Algorithm
+  Life: Life
+  Design Pattern: DesignPattern
+  Java: Java
+  Javascript: Javascript
+  Other: other
 tag_map:
 
 # Date / Time format

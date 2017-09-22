@@ -4,7 +4,7 @@ id: 2841
 categories:
   - Algorithm
 date: 2017-05-16 13:54:16
-tags:
+tags:Algorithm
 ---
 
 I am in  a couresa course for algorithm, and in the quiz there's 1 question:

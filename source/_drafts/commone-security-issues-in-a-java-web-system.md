@@ -2,9 +2,9 @@
 title: Commone Security issues in  Java Web System
 id: 2754
 categories:
-  - Seal
   - Security
 tags:
+  - Security
 ---
 
 ## 

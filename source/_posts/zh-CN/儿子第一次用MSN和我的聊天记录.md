@@ -1,5 +1,5 @@
 ---
-title: 儿子第一次用MSN和我的聊天记录，Record下来等他以后自己看
+title: 儿子第一次用MSN和我的聊天记录
 id: 2234
 categories:
   - Life

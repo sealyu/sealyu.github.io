@@ -4,7 +4,7 @@ id: 201
 categories:
   - Database
 date: 2010-11-29 10:51:15
-tags:
+tags:Database
 ---
 
 nvarchar与varchar的区别&amp;lt;/p&gt;
