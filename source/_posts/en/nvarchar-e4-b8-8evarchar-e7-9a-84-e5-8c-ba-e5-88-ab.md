@@ -2,8 +2,7 @@
 title: nvarchar与varchar的区别
 id: 201
 categories:
-  - Seal
-  - 未分类
+  - Database
 date: 2010-11-29 10:51:15
 tags:
 ---

@@ -3,7 +3,6 @@ title: Red–black BST with no extra memory
 id: 2841
 categories:
   - Algorithm
-  - Seal
 date: 2017-05-16 13:54:16
 tags:
 ---

@@ -2,8 +2,7 @@
 title: Javascript timezone issue with backend server in different zone
 id: 2707
 categories:
-  - Java Common
-  - Seal
+  - Java
 date: 2015-10-02 17:09:27
 tags:
 ---

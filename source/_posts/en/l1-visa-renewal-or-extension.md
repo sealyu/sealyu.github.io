@@ -3,7 +3,6 @@ title: L1 Visa renewal or extension?
 id: 2822
 categories:
   - Life
-  - Seal
 date: 2016-10-11 18:09:24
 tags:
 ---

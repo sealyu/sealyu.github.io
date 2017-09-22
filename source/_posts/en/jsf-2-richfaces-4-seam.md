@@ -2,8 +2,7 @@
 title: JSF 2 + Richfaces 4 + Seam
 id: 2811
 categories:
-  - Seal
-  - Seam
+  - UI
 date: 2016-10-05 19:02:23
 tags:
 ---

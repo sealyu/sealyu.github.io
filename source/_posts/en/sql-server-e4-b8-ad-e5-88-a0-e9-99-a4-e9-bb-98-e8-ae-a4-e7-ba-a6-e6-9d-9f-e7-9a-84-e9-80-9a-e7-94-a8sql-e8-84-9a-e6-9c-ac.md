@@ -2,8 +2,7 @@
 title: sql server 中删除默认约束的通用sql脚本
 id: 1078
 categories:
-  - Seal
-  - 未分类
+  - Database
 date: 2008-04-17 06:31:00
 tags:
 ---

@@ -2,8 +2,7 @@
 title: 儿子第一次用MSN和我的聊天记录，Record下来等他以后自己看
 id: 2234
 categories:
-  - Seal
-  - 未分类
+  - Life
 date: 2011-08-19 06:43:16
 tags:
 ---

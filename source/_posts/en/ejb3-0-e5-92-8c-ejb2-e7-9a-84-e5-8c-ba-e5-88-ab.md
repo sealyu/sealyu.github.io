@@ -2,8 +2,7 @@
 title: EJB3.0 和 EJB2 的区别
 id: 2425
 categories:
-  - Seal
-  - 未分类
+  - Java
 date: 2014-01-06 14:35:23
 tags:
 ---

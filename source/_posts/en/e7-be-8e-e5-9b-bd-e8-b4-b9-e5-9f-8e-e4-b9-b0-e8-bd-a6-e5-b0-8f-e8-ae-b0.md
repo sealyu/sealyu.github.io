@@ -2,8 +2,7 @@
 title: 美国费城买车小记
 id: 2799
 categories:
-  - Seal
-  - 未分类
+  - Life
 date: 2016-04-28 19:25:37
 tags:
 ---

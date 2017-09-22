@@ -2,8 +2,7 @@
 title: Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）
 id: 1069
 categories:
-  - Seal
-  - 未分类
+  - Java
 date: 2008-05-09 07:59:00
 tags:
 ---
