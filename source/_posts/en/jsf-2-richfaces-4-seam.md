@@ -4,7 +4,7 @@ id: 2811
 categories:
   - UI
 date: 2016-10-05 19:02:23
-tags:[Java, UI]
+tags: [Java, UI]
 
 ---
 

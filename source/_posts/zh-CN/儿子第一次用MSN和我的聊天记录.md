@@ -4,7 +4,7 @@ id: 2234
 categories:
   - Life
 date: 2011-08-19 06:43:16
-tags:
+tags: Life
 ---
 
 140101

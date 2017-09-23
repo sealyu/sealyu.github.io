@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug） - Haibo Yu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）">
+<meta property="og:url" content="http://haiboyu.me/zh-CN/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/index.html">
+<meta property="og:site_name" content="Haibo Yu">
+<meta property="og:description" content="最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-22T20:55:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）">
+<meta name="twitter:description" content="最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo logo-text" href="/">Haibo Yu</a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+          <a class="main-nav-link" href="/atom.xml">Rss</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://haiboyu.me"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/zh-CN/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/" class="article-date">
+  <time datetime="2008-05-09T11:59:00.000Z" itemprop="datePublished">2008-05-09</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：<br>使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例如：&lt;br /&gt;<br>public class EventInterceptor extends EmptyInterceptor {<br>public boolean onFlushDirty(<br>Object entity,<br>Serializable id,<br>Object[] currentState,<br>Object[] previousState,<br>String[] propertyNames,<br>Type[] types ) throws CallbackException {</p>
+<p>if(isAuditable(entity)){//如果该实体需要被记录，生成对应的event。&lt;br /&gt;<br>//此处生成对应的event。&lt;br /&gt;<br>}<br>return false;<br>}</p>
+<p>在程序执行后，发现对应一条实体的变化生成了多条重复的event记录，非常不解。&lt;br /&gt;<br>后来google发现，有人也碰到过对应的问题，并在Hibernage论坛中提出过这个问题，鉴定为Hibernate的一个小Bug。&lt;br /&gt;<br>（原文地址：<a href="http://forum.hibernate.org/viewtopic.php?t=940410&amp;highlight=interceptor+onflushdirty）&lt;br" target="_blank" rel="external">http://forum.hibernate.org/viewtopic.php?t=940410&amp;highlight=interceptor+onflushdirty）&lt;br</a> /&gt;<br>解决方法如下：&lt;br /&gt;<br>将FlushMode改为：FlushMode.COMMIT<br>或者也可以提前进行flush()<br>都可以解决这个问题。&lt;br /&gt;</p>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/zh-CN/2010/11/29/nvarchar与varchar的区别/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          nvarchar与varchar的区别
+        
+      </div>
+    </a>
+  
+  
+    <a href="/zh-CN/2008/04/17/sql server 中删除默认约束的通用sql脚本/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">sql server 中删除默认约束的通用sql脚本&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Haibo Yu&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'haibo-yu';
+  
+  var disqus_url = 'http://haiboyu.me/zh-CN/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

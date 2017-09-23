@@ -4,7 +4,7 @@ id: 2822
 categories:
   - Life
 date: 2016-10-11 18:09:24
-tags:Life
+tags: Life
 ---
 
 For L1 visa, I got it at 2014-11-4 :

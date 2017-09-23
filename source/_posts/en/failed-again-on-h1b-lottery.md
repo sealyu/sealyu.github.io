@@ -4,7 +4,7 @@ id: 2807
 categories:
   - Life
 date: 2016-05-04 18:48:31
-tags:Life
+tags: Life
 ---
 
 Life is not always good. When god open a window for you, he might close the door!

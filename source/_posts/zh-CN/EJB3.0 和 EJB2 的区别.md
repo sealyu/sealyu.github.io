@@ -4,8 +4,7 @@ id: 2425
 categories:
   - Java
 date: 2014-01-06 14:35:23
-tags:[Java, EJB]
-
+tags: [Java, EJB]
 ---
 
 1\. EJB2.0使用EntityBeans来访问数据库，EJB3.0是使用JPA（Java Persistance API）来访问数据库。

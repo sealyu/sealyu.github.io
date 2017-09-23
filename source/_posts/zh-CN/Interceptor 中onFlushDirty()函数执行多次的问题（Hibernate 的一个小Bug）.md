@@ -4,7 +4,7 @@ id: 1069
 categories:
   - Java
 date: 2008-05-09 07:59:00
-tags:Java
+tags: Java
 ---
 
 最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：
