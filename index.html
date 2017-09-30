@@ -54,6 +54,152 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-中文数字和阿拉伯数字的转换" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zh-CN/2017/09/25/中文数字和阿拉伯数字的转换/">中文数字和阿拉伯数字的转换</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/zh-CN/2017/09/25/中文数字和阿拉伯数字的转换/" class="article-date">
+  <time datetime="2017-09-25T22:05:32.000Z" itemprop="datePublished">2017-09-25</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。</p>
+<h2 id="中文数字的特点："><a href="#中文数字的特点：" class="headerlink" title="中文数字的特点："></a>中文数字的特点：</h2><ol>
+<li>包括零到九的基本数字</li>
+<li>数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用</li>
+</ol>
+<h2 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计"></a>算法设计</h2><p>1.使用一个Map<string,long>存储所有的数量级文字信息：</string,long></p>
+<pre><code>/**
+ * 数量级map，存储对应的数量级文字和对应的阿拉伯数字量值
+ * @return The operator map
+ */
+private static Map&lt;String,Long&gt; getMagnitudeMap(){
+    Map&lt;String,Long&gt; magnitudeMap = new HashMap();
+    magnitudeMap.put(&quot;十&quot;, 10l);
+    magnitudeMap.put(&quot;百&quot;, 100l);
+    magnitudeMap.put(&quot;千&quot;, 1000l);
+    magnitudeMap.put(&quot;万&quot;, 10000l);
+    magnitudeMap.put(&quot;亿&quot;, 100000000l);
+    magnitudeMap.put(&quot;兆&quot;, 1000000000000l);
+    magnitudeMap.put(&quot;京&quot;, 10000000000000000l);
+    return magnitudeMap;
+}
+</code></pre><p> 使用另一个Map<string,long>存储所有的基本数字信息：</string,long></p>
+<pre><code>/**
+ * 基本数据map，存储对应的基本数据及对应的阿拉伯数字量值
+ * @return The magnitude map
+ */
+private static Map&lt;String,Long&gt; getDataMap(){
+    Map&lt;String,Long&gt; dataMap = new HashMap&lt;&gt;();
+    dataMap.put(&quot;一&quot;,1l);
+    dataMap.put(&quot;二&quot;,2l);
+    dataMap.put(&quot;三&quot;,3l);
+    dataMap.put(&quot;四&quot;,4l);
+    dataMap.put(&quot;五&quot;,5l);
+    dataMap.put(&quot;六&quot;,6l);
+    dataMap.put(&quot;七&quot;,7l);
+    dataMap.put(&quot;八&quot;,8l);
+    dataMap.put(&quot;九&quot;,9l);
+    dataMap.put(&quot;零&quot;,0l);
+    return dataMap;
+}    
+</code></pre><p>2.从后往前遍历字符串，遇到数字的时候，如果是零直接跳过，否则将当前数字前一位数量级相乘并累加到sumvalue中。</p>
+<pre><code>/**
+ * 从后往前遍历字符串的方式将中文数字转换为阿拉伯数字
+ * @param inputStr 源字符串
+ * @return 转换后的阿拉伯数字
+ * @throws Exception 如果字符串中有不能识别的（不在dataMap和operatorMap）字符，抛出异常
+ */
+public long convertToLongFromEnd(String inputStr) throws Exception{
+    //存储遇到该数字前的最大一个数量值，这个值是累乘之前所有数量级，
+    //比如二百万，到二的时候最高数量级就是100*10000
+    long currentMaxLevel = 1l;
+    //存储之前一次执行过乘操作的数量级
+    long previousOpeMagnitude = 1l;
+    //存储当前字符所对应的数量级
+    long currentMagnitude = 1l;
+    //存储当前所有字符仲最大的单个字符的数量级，
+    long maxMagnitude = 1l;
+
+    long sumVal = 0l;
+
+    int len = inputStr.length();
+    //倒序循环整个字符串，从最低位开始计算整个数值
+    for(int i=len-1;i&gt;=0;i--){
+        String currentTxt = String.valueOf(inputStr.charAt(i));
+
+        //如果当前值是数量级
+        if(magnitudeMap.containsKey(currentTxt)){
+            currentMagnitude = magnitudeMap.get(currentTxt);
+            //如果第一位是一个数量级（比如十二）, 将当前值相加
+            if(i == 0){
+                sumVal = sumVal + currentMagnitude;
+                return  sumVal;
+            }
+            //比较当前数量级与当前最大数量值，如果大于当前最大值，将当然最大数量值更新为当前数量级
+            if(currentMagnitude &gt; currentMaxLevel){
+                currentMaxLevel = currentMagnitude;
+            }else{
+                if(currentMagnitude &lt; maxMagnitude &amp;&amp; currentMagnitude &gt; previousOpeMagnitude){
+                    //如果当前数量级小于当前最大数量级并且大于之前的数量级,比如二十五万五百亿，抵达&quot;万&quot;的时候因为之前的百
+                    //已经与亿相乘，所以应该除以之前的百才能得到当前真正的最大数量值
+                    currentMaxLevel = currentMaxLevel*currentMagnitude/previousOpeMagnitude;
+                }else{
+                    currentMaxLevel = currentMaxLevel*currentMagnitude;
+                }
+                previousOpeMagnitude = currentMagnitude;
+            }
+
+            //将当前最大单数量级更新为当前数量级
+            if(currentMagnitude &gt; maxMagnitude){
+                maxMagnitude = currentMagnitude;
+            }
+        }else if(dataMap.containsKey(currentTxt)){
+            //如果是0~9之间的数字，与前面一位数量级相乘，并累加到当前sumVal
+            long data = dataMap.get(currentTxt);
+            if(data == 0){
+                //跳过0
+                continue;
+            }else{
+                sumVal = sumVal + data*currentMaxLevel;
+            }
+        }else{
+            throw new Exception(&quot;Find illegal character in the input string:&quot;+currentTxt);
+        }
+    }
+    return sumVal;
+}
+</code></pre>
+      
+    </div>
+    
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+    
       <article id="post-Design-Pattern-Note-Proxy-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -62,17 +208,21 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/en/2017/09/22/Design-Pattern-Note-Proxy-Pattern/">Design Pattern Note - Proxy Pattern</a>
+      <a class="article-title" href="/zh-CN/2017/09/22/Design-Pattern-Note-Proxy-Pattern/">Design Pattern 笔记 - 代理模式(Proxy Pattern)</a>
     </h1>
   
 
       </header>
     
     <div class="article-meta">
-      <a href="/en/2017/09/22/Design-Pattern-Note-Proxy-Pattern/" class="article-date">
+      <a href="/zh-CN/2017/09/22/Design-Pattern-Note-Proxy-Pattern/" class="article-date">
   <time datetime="2017-09-22T20:11:21.000Z" itemprop="datePublished">2017-09-22</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Design-Pattern/">Design Pattern</a>
+  </div>
+
       
     </div>
     <div class="article-entry" itemprop="articleBody">
@@ -547,60 +697,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>140101<br>m,,<br>mmmmmmmmmmmm<br>p010看过晕<br>ti\<br>9.5 不会呼唤 9 提议明年，， 男男女女男男女女男男女女男男女女年内能000000000000</p>
-
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Life/">Life</a></li></ul>
-
-      </footer>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-    
-      <article id="post-一个句号引发的惨案" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zh-CN/2011/04/01/一个句号引发的惨案/">一个句号引发的惨案</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/zh-CN/2011/04/01/一个句号引发的惨案/" class="article-date">
-  <time datetime="2011-04-01T08:40:42.000Z" itemprop="datePublished">2011-04-01</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Life/">Life</a>
-  </div>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天客户对之前做的东西做了一个修改，要求是：<strong>Please add a period to the end of the message.</strong></p>
-<p>看来看去，没想起来到底要加什么period。加一段日期进去？加什么日期呢？</p>
-<p>问了一下，客户回复：I mean the period（。）</p>
-<p>靠，period原来还有句号的意思，这么多年英语白学了，还以为客户的需求没给明白，汗！</p>
 
       
     </div>
