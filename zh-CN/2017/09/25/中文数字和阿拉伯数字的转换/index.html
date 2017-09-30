@@ -6,13 +6,14 @@
   <title>中文数字和阿拉伯数字的转换 - Haibo Yu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
+<meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中文数字和阿拉伯数字的转换">
 <meta property="og:url" content="http://haiboyu.me/zh-CN/2017/09/25/中文数字和阿拉伯数字的转换/index.html">
 <meta property="og:site_name" content="Haibo Yu">
 <meta property="og:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-30T04:18:21.000Z">
+<meta property="og:updated_time" content="2017-09-30T16:39:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中文数字和阿拉伯数字的转换">
 <meta name="twitter:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
@@ -76,6 +77,10 @@
   <time datetime="2017-09-25T22:05:32.000Z" itemprop="datePublished">2017-09-25</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
       
     </div>
     <div class="article-entry" itemprop="articleBody">
@@ -195,9 +200,28 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#中文数字的特点："><span class="toc-number">1.</span> <span class="toc-text">中文数字的特点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#算法设计"><span class="toc-number">2.</span> <span class="toc-text">算法设计</span></a></li></ol>
       </div>
     
+
+      <div>
+          <ul class="post-copyright">
+              <li class="post-copyright-author">
+                  <strong>本文作者：</strong>Haibo Yu
+              </li>
+              <li class="post-copyright-link">
+                  <strong>本文链接：</strong>
+                  <a href="/zh-CN/2017/09/25/中文数字和阿拉伯数字的转换/" title="中文数字和阿拉伯数字的转换">中文数字和阿拉伯数字的转换</a>
+              </li>
+              <li class="post-copyright-license">
+                  <strong>版权： </strong>
+                  本站文章均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议，请勿用于商业，转载注明出处！
+              </li>
+          </ul>
+      </div>
+
     
       <footer class="article-footer">
         
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/">Algorithm</a></li></ul>
+
       </footer>
     
   </div>
