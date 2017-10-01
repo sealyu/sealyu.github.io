@@ -6,6 +6,8 @@
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+
+  {% include 'baidu_tongji.swig' %}
 </div>
 
 {% if theme.copyright %}
@@ -21,4 +23,4 @@
 </div>
 {% endif %}
 
-{% include 'baidu_tongji.swig' %}
+
