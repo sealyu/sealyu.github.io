@@ -14,6 +14,7 @@ rm -r ${base_dir}/page
 rm -r ${base_dir}/tags
 rm -r ${base_dir}/zh-Hans
 rm -r ${base_dir}/index.html
+rm -r ${base_dir}/search.xml
 
 cp -R ${base_dir}/public/about ${base_dir}/about
 cp -R ${base_dir}/public/archives ${base_dir}/archives
@@ -27,5 +28,6 @@ cp -R ${base_dir}/public/page ${base_dir}/page
 cp -R ${base_dir}/public/tags ${base_dir}/tags
 cp -R ${base_dir}/public/zh-Hans ${base_dir}/zh-Hans
 cp -R ${base_dir}/public/index.html ${base_dir}/index.html
+cp -R ${base_dir}/public/search.xml ${base_dir}/search.xml
 
 echo "Done!"
