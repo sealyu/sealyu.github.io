@@ -28,6 +28,3 @@ cp -R ${base_dir}/public/webfonts ${base_dir}/webfonts
 cp -R ${base_dir}/public/zh-CN ${base_dir}/zh-CN
 cp -R ${base_dir}/public/index.html ${base_dir}/index.html
 
-#Empty trash
-cd ~/.Trash
-chflags -R nouchg *

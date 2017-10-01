@@ -85,6 +85,11 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
+        
+<div id="toc">
+  
+</div>
+
         <div class="itemizedlist"><br><br>In order to overwrite the default richfaces 4 ecss styles, from the document(<a href="https://docs.jboss.org/richfaces/latest/Developer_Guide/en-US/html_single/#sect-Developer_Guide-RichFaces_overview-Restrictions" target="_blank" rel="external">https://docs.jboss.org/richfaces/latest/Developer_Guide/en-US/html_single/#sect-Developer_Guide-RichFaces_overview-Restrictions</a>). You need to put it to &lt;h:body&gt; section:<br><br>JSF does render resource links (stylesheets, scripts) in order of occurrence, thus if you add <code>&amp;lt;h:outputStylesheet&amp;gt;</code> to the <code>&amp;lt;h:head&amp;gt;</code>section, JSF will render it before the RichFaces resource links (dependencies of RichFaces components). To be able to overwrite RichFaces stylesheets and re-use RichFaces JavaScript implementation, you need to render <code>&amp;lt;h:outputStylesheet&amp;gt;</code> to the <code>&amp;lt;h:body&amp;gt;</code>section (safe solution is to place it on the end of the section; however to keep readability, you can use start of the section).<br><br></div>
 
 <p>&nbsp;</p>
@@ -178,6 +183,10 @@
     </div>
   </div>
 </footer>
+<div id="top">
+    <a href="#">▲</a>
+    <a href="#footer">▼</a>
+</div>
     
 <script>
   var disqus_shortname = 'haibo-yu';
