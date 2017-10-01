@@ -10,6 +10,7 @@ tags: Algorithm
 I am in  a couresa course for algorithm, and in the quiz there's 1 question:
 
 <span style="color: #ff6600;">_Red–black BST with no extra memory. Describe how to save the memory for storing the color information when implementing a red–black BST._</span>
+<!-- more -->
 
 I saw some posts which are talking about using pointer(like c or c++ which support pointer) to store the color infomration. But for java, there's no concept like pointer.
 

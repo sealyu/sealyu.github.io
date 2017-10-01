@@ -14,7 +14,7 @@ For L1 visa, I got it at 2014-11-4 :
 *   I-94, expiration date as 2019-11-4
 
 I need to go back to China at 2016-12-3, and at the time my visa is going to be expired, and then when I come back to US at 2016-12-20, i will not able to entry.
-
+<!-- more -->
 This problem is driving me crazy these sevral days. And finally I releaize it's not a big deal. What i need to do is only the L1 VISA renewal.
 
 Here is what it means:

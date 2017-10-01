@@ -77,7 +77,7 @@ disqus_shortname: haibo-yu
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: minos
+theme: next
 
 baidu_tongji: true
 
