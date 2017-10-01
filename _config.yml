@@ -79,6 +79,8 @@ disqus_shortname: haibo-yu
 ## Themes: https://hexo.io/themes/
 theme: minos
 
+baidu_tongji: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
