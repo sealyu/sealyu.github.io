@@ -428,12 +428,18 @@
       
         
           
-            <p>今天客户对之前做的东西做了一个修改，要求是：<strong>Please add a period to the end of the message.</strong></p>
-<p>看来看去，没想起来到底要加什么period。加一段日期进去？加什么日期呢？</p>
-<p>问了一下，客户回复：I mean the period（。）</p>
-<p>靠，period原来还有句号的意思，这么多年英语白学了，还以为客户的需求没给明白，汗！</p>
-
-          
+          今天客户对之前做的东西做了一个修改，要求是：Please add a period to the end of the message.
+看来看去，没想起来到底要加什么period。加一段日期进去？加什么日期呢？
+问了一下，客户回复：I mean the period（。）
+靠，period原来还有
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/zh-Hans/2011/04/01/一个句号引发的惨案/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -584,12 +590,16 @@
       
         
           
-            <p>nvarchar与varchar的区别&amp;lt;/p&gt;</p>
-<p>varchar[(n)]<br>长度为   n   个字节的可变长度且非   Unicode   的字符数据。n<br>必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n<br>个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char   varying   或<br>character   varying。</p>
-<p>nvarchar(n)<br>包含   n<br>个字符的可变长度   Unicode   字符数据。n   的值必须介于   1   与   4,000<br>之间。字节的存储大小是所输入字符个数的两倍。所输入的数据字符长度可以为零。nvarchar   在   SQL-92   中的同义词为<br>national   char   varying   和   national   character   varying。&amp;amp;nbsp;</p>
-<p>通俗一點就是varchar適合輸入英文和數字，nvarchar一般用做中文或其它語言的輸入，這樣到別的語系不會出現亂碼:))</p>
-
-          
+          nvarchar与varchar的区别&amp;lt;/p&gt;
+varchar[(n)]长度为   n   个字节的可变长度且非   Unicode   的字符数据。n必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n个字节。所输入
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/zh-Hans/2010/11/29/nvarchar与varchar的区别/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -740,11 +750,15 @@
       
         
           
-            <p>最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：<br>使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例如：&lt;br /&gt;<br>public class EventInterceptor extends EmptyInterceptor {<br>public boolean onFlushDirty(<br>Object entity,<br>Serializable id,<br>Object[] currentState,<br>Object[] previousState,<br>String[] propertyNames,<br>Type[] types ) throws CallbackException {</p>
-<p>if(isAuditable(entity)){//如果该实体需要被记录，生成对应的event。&lt;br /&gt;<br>//此处生成对应的event。&lt;br /&gt;<br>}<br>return false;<br>}</p>
-<p>在程序执行后，发现对应一条实体的变化生成了多条重复的event记录，非常不解。&lt;br /&gt;<br>后来google发现，有人也碰到过对应的问题，并在Hibernage论坛中提出过这个问题，鉴定为Hibernate的一个小Bug。&lt;br /&gt;<br>（原文地址：<a href="http://forum.hibernate.org/viewtopic.php?t=940410&amp;highlight=interceptor+onflushdirty）&lt;br" target="_blank" rel="external">http://forum.hibernate.org/viewtopic.php?t=940410&amp;highlight=interceptor+onflushdirty）&lt;br</a> /&gt;<br>解决方法如下：&lt;br /&gt;<br>将FlushMode改为：FlushMode.COMMIT<br>或者也可以提前进行flush()<br>都可以解决这个问题。&lt;br /&gt;</p>
-
-          
+          最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的o
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -894,7 +908,9 @@
 
       
         
-          <p>作者： sealyu 日期：2008-04-17<br>在SQL Server 中，如果给表的一个字段设置了默认值，就会在系统表sysobjects中生成一个默认约束。&lt;br /&gt;<br>如果想删除这个设置了默认值的字段（假设此字段名column1），<br>执行“ALTER TABLE table1 DROP COLUMN column1”时就会报错：<br>The object ‘DF__xxxxxxxxxxx’ is dependent on column ‘column1’.<br>ALTER TABLE DROP COLUMN column1failed because one or more objects access this column.<br>
+          
+          作者： sealyu 日期：2008-04-17在SQL Server 中，如果给表的一个字段设置了默认值，就会在系统表sysobjects中生成一个默认约束。&lt;br /&gt;如果想删除这个设置了默认值的字段（假设此字段名column1），执行“ALTER TABLE table1 DROP
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/zh-Hans/2008/04/17/sql server 中删除默认约束的通用sql脚本/#more" rel="contents">
@@ -1555,6 +1571,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

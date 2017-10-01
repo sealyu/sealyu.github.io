@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。">
+<meta name="description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中文数字和阿拉伯数字的转换">
 <meta property="og:url" content="http://haiboyu.me/zh-Hans/2017/09/25/中文数字和阿拉伯数字的转换/index.html">
 <meta property="og:site_name" content="Haibo Yu">
-<meta property="og:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。">
+<meta property="og:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-01T17:59:17.000Z">
+<meta property="og:updated_time" content="2017-10-01T18:38:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中文数字和阿拉伯数字的转换">
-<meta name="twitter:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。">
+<meta name="twitter:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
 
 
 
@@ -432,7 +432,7 @@
       
 
       
-        <p>在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。<br><a id="more"></a></p>
+        <p>在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。</p>
 <h2 id="中文数字的特点："><a href="#中文数字的特点：" class="headerlink" title="中文数字的特点："></a>中文数字的特点：</h2><ol>
 <li>包括零到九的基本数字</li>
 <li>数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用</li>
@@ -1314,6 +1314,28 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
