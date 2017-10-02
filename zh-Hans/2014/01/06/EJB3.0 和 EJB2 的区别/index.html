@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Haibo Yu">
 <meta property="og:description" content="1. EJB2.0使用EntityBeans来访问数据库，EJB3.0是使用JPA（Java Persistance API）来访问数据库。 2. EJB2.0 有部署脚本(Deployment descriptiors),EJB3.0没有。 3. EJB3.0不需要Home接口，EJB2.0需要。 4. EJB3.0简化了开发，引入了元数据。 5. EJB2 限制开发人员无法在 EJB 容器外部">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-22T20:55:07.000Z">
+<meta property="og:updated_time" content="2017-10-02T17:46:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EJB3.0 和 EJB2 的区别">
 <meta name="twitter:description" content="1. EJB2.0使用EntityBeans来访问数据库，EJB3.0是使用JPA（Java Persistance API）来访问数据库。 2. EJB2.0 有部署脚本(Deployment descriptiors),EJB3.0没有。 3. EJB3.0不需要Home接口，EJB2.0需要。 4. EJB3.0简化了开发，引入了元数据。 5. EJB2 限制开发人员无法在 EJB 容器外部">
@@ -859,7 +859,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "search.xml";
+    var search_path = "";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

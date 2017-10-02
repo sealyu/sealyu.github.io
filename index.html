@@ -590,8 +590,10 @@
       
         
           
-          
-          
+          定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。
+
+常用场景远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/#more" rel="contents">
@@ -2201,7 +2203,7 @@ Client select a date(Say 2015-10-1 ) from the form, angular populat
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "search.xml";
+    var search_path = "";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
