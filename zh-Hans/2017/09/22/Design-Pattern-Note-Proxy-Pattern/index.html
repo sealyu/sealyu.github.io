@@ -96,19 +96,19 @@
 
 
 
-<meta name="description" content="定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  常用场景远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事">
+<meta name="description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
 <meta name="keywords" content="Design Pattern">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Design Pattern 笔记 - 代理模式(Proxy Pattern)">
 <meta property="og:url" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/index.html">
 <meta property="og:site_name" content="Haibo Yu">
-<meta property="og:description" content="定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  常用场景远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事">
+<meta property="og:description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png">
-<meta property="og:updated_time" content="2017-10-02T19:48:26.000Z">
+<meta property="og:updated_time" content="2017-10-03T20:14:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Design Pattern 笔记 - 代理模式(Proxy Pattern)">
-<meta name="twitter:description" content="定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  常用场景远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事">
+<meta name="twitter:description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
 <meta name="twitter:image" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png">
 
 
@@ -446,13 +446,13 @@
       
 
       
-        <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。</p>
+        <h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一. 定义"></a>一. 定义</h2><p>代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。</p>
 <img src="/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png" alt="Proxy Pattern" title="Proxy Pattern">
-<h2 id="常用场景"><a href="#常用场景" class="headerlink" title="常用场景"></a>常用场景</h2><h3 id="远程代理"><a href="#远程代理" class="headerlink" title="远程代理"></a>远程代理</h3><p>为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事务分界；而 JAX-RPC Web 服务则用代理模式让远程服务表现得像本地对象一样。代理可以用来提供远程控制（就像在 RMI、EJB 和 JAX-RPC 中那样），用安全性策略包装对象（EJB）、为昂贵的对象（EJB 实体 Bean）提供惰性装入，或者添加检测工具（例如日志记录）。</p>
-<h3 id="图片代理"><a href="#图片代理" class="headerlink" title="图片代理"></a>图片代理</h3><p>一些网站或者程序中在显示图片列表时使用缩略图显示，只有在需要放大浏览或者下载时才访问真正的原图。</p>
-<h3 id="保护代理"><a href="#保护代理" class="headerlink" title="保护代理"></a>保护代理</h3><p>可以控制对一个对象的访问权限，为不同用户提供不同级别的使用权限</p>
-<h3 id="虚拟代理"><a href="#虚拟代理" class="headerlink" title="虚拟代理"></a>虚拟代理</h3><p>如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建。比较典型的例子就是hibernate的延迟加载，Hibernate结合Javassist或CGLIB动态生成代理对象， 通过代理模式来“推迟”加载关联实体的时间，如果程序并不需要访问关联实体，那程序就不会去抓取关联实体。这样既可以节省系统的内存开销，也可以缩短 Hibernate 加载实体的时间。</p>
-<h3 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h3><p>比较典型的应用场景：</p>
+<h2 id="二-常用场景"><a href="#二-常用场景" class="headerlink" title="二. 常用场景"></a>二. 常用场景</h2><h3 id="1-远程代理"><a href="#1-远程代理" class="headerlink" title="1. 远程代理"></a>1. 远程代理</h3><p>为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事务分界；而 JAX-RPC Web 服务则用代理模式让远程服务表现得像本地对象一样。代理可以用来提供远程控制（就像在 RMI、EJB 和 JAX-RPC 中那样），用安全性策略包装对象（EJB）、为昂贵的对象（EJB 实体 Bean）提供惰性装入，或者添加检测工具（例如日志记录）。</p>
+<h3 id="2-图片代理"><a href="#2-图片代理" class="headerlink" title="2. 图片代理"></a>2. 图片代理</h3><p>一些网站或者程序中在显示图片列表时使用缩略图显示，只有在需要放大浏览或者下载时才访问真正的原图。</p>
+<h3 id="3-保护代理"><a href="#3-保护代理" class="headerlink" title="3. 保护代理"></a>3. 保护代理</h3><p>可以控制对一个对象的访问权限，为不同用户提供不同级别的使用权限</p>
+<h3 id="4-虚拟代理"><a href="#4-虚拟代理" class="headerlink" title="4. 虚拟代理"></a>4. 虚拟代理</h3><p>如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建。比较典型的例子就是hibernate的延迟加载，Hibernate结合Javassist或CGLIB动态生成代理对象， 通过代理模式来“推迟”加载关联实体的时间，如果程序并不需要访问关联实体，那程序就不会去抓取关联实体。这样既可以节省系统的内存开销，也可以缩短 Hibernate 加载实体的时间。</p>
+<h3 id="5-动态代理"><a href="#5-动态代理" class="headerlink" title="5. 动态代理"></a>5. 动态代理</h3><p>比较典型的应用场景：</p>
 <ol>
 <li>缓存系统</li>
 <li>spring AOP面向切面编程。</li>
@@ -460,13 +460,13 @@
 <li>RMI在JDK 5后的版本也是使用动态代理生成stub对象。</li>
 <li>单元测试中也使用动态代理来mock对象。</li>
 </ol>
-<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
+<h2 id="三-优缺点"><a href="#三-优缺点" class="headerlink" title="三. 优缺点"></a>三. 优缺点</h2><h3 id="1-优点"><a href="#1-优点" class="headerlink" title="1. 优点"></a>1. 优点</h3><ol>
 <li>代理模式可以在一定程度上降低系统的耦合度，</li>
 <li>虚拟代理通过使用一个小对象来代表一个大对象，可以减少系 统资源的消耗，对系统进行优化并提高运行速度。</li>
 <li>保护代理可以控制对真实对象的使用权限。</li>
 <li>通过在代理对象中添加业务逻辑来实现对一些系统统一行为的定制和扩展，从而能够更灵活地处理对原有对象的控制和访问。</li>
 </ol>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<h3 id="2-缺点"><a href="#2-缺点" class="headerlink" title="2. 缺点"></a>2. 缺点</h3><ol>
 <li>由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢</li>
 <li>实现代理模式需要额外的工作，有些代理模式的实现 非常复杂</li>
 </ol>
@@ -652,7 +652,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -706,12 +706,23 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="sealyu@hotmail.com" target="_blank" title="Email">
+                <a href="sealyu@hotmail.com" target="_blank" title="E-Mail">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-envelope"></i>
                   
                     
-                      Email
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/sealyu" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
                     
                 </a>
               </span>
@@ -740,7 +751,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用场景"><span class="nav-text">常用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#远程代理"><span class="nav-text">远程代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片代理"><span class="nav-text">图片代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保护代理"><span class="nav-text">保护代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟代理"><span class="nav-text">虚拟代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态代理"><span class="nav-text">动态代理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优缺点"><span class="nav-text">优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优点"><span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点"><span class="nav-text">缺点</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-定义"><span class="nav-text">一. 定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-常用场景"><span class="nav-text">二. 常用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-远程代理"><span class="nav-text">1. 远程代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-图片代理"><span class="nav-text">2. 图片代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-保护代理"><span class="nav-text">3. 保护代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-虚拟代理"><span class="nav-text">4. 虚拟代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-动态代理"><span class="nav-text">5. 动态代理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-优缺点"><span class="nav-text">三. 优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-优点"><span class="nav-text">1. 优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-缺点"><span class="nav-text">2. 缺点</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -840,6 +851,8 @@
   
 
 
+  
+
 
 
 
@@ -867,6 +880,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
