@@ -1,5 +1,5 @@
 title: "About"
-layout: "about"
+comments: false
 type: "about"
 ---
 

@@ -92,7 +92,7 @@ scheme: Gemini
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/sealyu
-  E-Mail: sealyu@hotmail.com
+  Email: mailto:sealyu@hotmail.com
   Weibo: http://weibo.com/sealyu
 
 # Social Links Icons
