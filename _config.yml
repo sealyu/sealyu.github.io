@@ -9,7 +9,7 @@ description:
 author: Haibo Yu
 language:
   - en
-  - zh-CN
+  - zh-Hans
 timezone:
 
 # URL
@@ -87,3 +87,8 @@ deploy:
   type: git
   repo: https://github.com/sealyu/sealyu.github.io.git
   branch: master
+
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml

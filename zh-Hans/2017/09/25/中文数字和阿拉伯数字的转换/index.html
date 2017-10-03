@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="en,zh-CN,default">
+<html class="theme-next gemini use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,6 +84,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="Haibo Yu" type="application/atom+xml" />
+
 
 
 
@@ -94,18 +96,18 @@
 
 
 
-<meta name="description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
+<meta name="description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 一. 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  二. 算法">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中文数字和阿拉伯数字的转换">
 <meta property="og:url" content="http://haiboyu.me/zh-Hans/2017/09/25/中文数字和阿拉伯数字的转换/index.html">
 <meta property="og:site_name" content="Haibo Yu">
-<meta property="og:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
+<meta property="og:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 一. 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  二. 算法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-02T17:46:36.000Z">
+<meta property="og:updated_time" content="2017-10-03T19:48:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中文数字和阿拉伯数字的转换">
-<meta name="twitter:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  算法设计1.使用">
+<meta name="twitter:description" content="在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。 一. 中文数字的特点： 包括零到九的基本数字 数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用  二. 算法">
 
 
 
@@ -257,6 +259,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
           </a>
         </li>
       
@@ -433,11 +445,11 @@
 
       
         <p>在微软的面试中遇到一个算法问题，要求将类似于”二十五万五百亿三千零八万一千零三十五”的中文数字转换成对应的阿拉伯数字。结果在面试中一味地想着用栈或者其他数据结构去实现，而没有仔细的分析具体问题和算法就开始写代码，导致完成的非常差劲。</p>
-<h2 id="中文数字的特点："><a href="#中文数字的特点：" class="headerlink" title="中文数字的特点："></a>中文数字的特点：</h2><ol>
+<h2 id="一-中文数字的特点："><a href="#一-中文数字的特点：" class="headerlink" title="一. 中文数字的特点："></a>一. 中文数字的特点：</h2><ol>
 <li>包括零到九的基本数字</li>
 <li>数量级文字：十、百、千、万、亿、兆、京。。。等。十百千不能连续出现，从万开始，数量级前缀其他数量级一起使用</li>
 </ol>
-<h2 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计"></a>算法设计</h2><p>1.使用一个Map<string,long>存储所有的数量级文字信息：</string,long></p>
+<h2 id="二-算法设计"><a href="#二-算法设计" class="headerlink" title="二. 算法设计"></a>二. 算法设计</h2><p>1.使用一个Map<string,long>存储所有的数量级文字信息：</string,long></p>
 <pre><code>/**
  * 数量级map，存储对应的数量级文字和对应的阿拉伯数字量值
  * @return The operator map
@@ -538,7 +550,11 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
     }
     return sumVal;
 }
-</code></pre>
+</code></pre><h2 id="三-代码及测试"><a href="#三-代码及测试" class="headerlink" title="三. 代码及测试"></a>三. 代码及测试</h2><ol>
+<li>相关代码详见：<a href="https://github.com/sealyu/algorithm/blob/master/AlgorithmTests/src/main/java/com/haiboyu/algorithm/other/ChineseNumberConverter.java" target="_blank" rel="external">ChineseNumberConverter.java</a></li>
+<li>单元测试详见：<a href="https://github.com/sealyu/algorithm/blob/master/AlgorithmTests/src/test/java/TestChineseNumberConverter.java" target="_blank" rel="external">TestChineseNumberConverter.java</a></li>
+</ol>
+
       
     </div>
     
@@ -595,6 +611,10 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/zh-Hans/2017/10/02/链表相关算法/" rel="prev" title="链表相关算法">
+                链表相关算法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -716,7 +736,7 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -747,8 +767,39 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
         </nav>
 
         
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/sealyu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="sealyu@hotmail.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      Email
+                    
+                </a>
+              </span>
+            
           
         </div>
 
@@ -773,7 +824,7 @@ public long convertToLongFromEnd(String inputStr) throws Exception{
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#中文数字的特点："><span class="nav-number">1.</span> <span class="nav-text">中文数字的特点：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法设计"><span class="nav-number">2.</span> <span class="nav-text">算法设计</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-中文数字的特点："><span class="nav-text">一. 中文数字的特点：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-算法设计"><span class="nav-text">二. 算法设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-代码及测试"><span class="nav-text">三. 代码及测试</span></a></li></ol></div>
             
 
           </div>
