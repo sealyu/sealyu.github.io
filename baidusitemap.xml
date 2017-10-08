@@ -4,6 +4,27 @@
 
     
     
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E9%93%BE%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-10-08T03:45:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>链表相关算法</title>
+        <pubTime>2017-10-02T19:58:59.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
   <url>
     <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
@@ -25,7 +46,6 @@
     </url>
 
     
-    
   <url>
     <loc>http://haiboyu.me/zh-Hans/2017/09/25/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%97%E5%92%8C%E9%98%BF%E6%8B%89%E4%BC%AF%E6%95%B0%E5%AD%97%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
     <lastmod>2017-10-03T23:08:05.000Z</lastmod>
@@ -40,26 +60,6 @@
            
              
               <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
-    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>L1 Visa renewal or extension?</title>
-        <pubTime>2016-10-11T22:09:24.000Z</pubTime>
-        
-        <tag>Life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
           
         </display>
     </data>
@@ -93,6 +93,26 @@
         <display>
         <title>美国费城买车小记</title>
         <pubTime>2016-04-28T23:25:37.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>L1 Visa renewal or extension?</title>
+        <pubTime>2016-10-11T22:09:24.000Z</pubTime>
         
         <tag>Life</tag>
          
