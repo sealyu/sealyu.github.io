@@ -96,20 +96,20 @@
 
 
 
-<meta name="description" content="简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使用链表">
+<meta name="description" content="一. 简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="链表相关算法">
 <meta property="og:url" content="http://haiboyu.me/zh-Hans/2017/10/02/链表相关算法/index.html">
 <meta property="og:site_name" content="Haibo Yu">
-<meta property="og:description" content="简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使用链表">
+<meta property="og:description" content="一. 简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://haiboyu.me/zh-Hans/2017/10/02/链表相关算法/linkedlist-circle.jpg">
 <meta property="og:image" content="http://haiboyu.me/zh-Hans/2017/10/02/链表相关算法/2LinkedList.jpg">
-<meta property="og:updated_time" content="2017-10-08T03:54:49.000Z">
+<meta property="og:updated_time" content="2017-10-09T18:18:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="链表相关算法">
-<meta name="twitter:description" content="简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使用链表">
+<meta name="twitter:description" content="一. 简介根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。使">
 <meta name="twitter:image" content="http://haiboyu.me/zh-Hans/2017/10/02/链表相关算法/linkedlist-circle.jpg">
 
 
@@ -447,15 +447,15 @@
       
 
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。<br>使用链表结构可以克服数组链表需要预先知道数据大小的缺点，链表结构可以充分利用计算机内存空间，实现灵活的内存动态管理。但是链表失去了数组随机读取的优点，同时链表由于增加了结点的指针域，空间开销比较大。</p>
-<h2 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h2><p>根据链表结构插入和删除效率特别高的特点，链表主要用于插入和删除数据比较频繁并要求高效率的场景，比如：</p>
+        <h2 id="一-简介"><a href="#一-简介" class="headerlink" title="一. 简介"></a>一. 简介</h2><p>根据维基百科的定义：链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。<br>使用链表结构可以克服数组链表需要预先知道数据大小的缺点，链表结构可以充分利用计算机内存空间，实现灵活的内存动态管理。但是链表失去了数组随机读取的优点，同时链表由于增加了结点的指针域，空间开销比较大。</p>
+<h2 id="二-实际应用"><a href="#二-实际应用" class="headerlink" title="二. 实际应用"></a>二. 实际应用</h2><p>根据链表结构插入和删除效率特别高的特点，链表主要用于插入和删除数据比较频繁并要求高效率的场景，比如：</p>
 <ol>
 <li>操作系统的文件系统管理和内存池等。</li>
 <li>内存数据库Redis中就有多个功能（发布与订阅、慢查询、监视器等）用到了无环双向链表。</li>
 <li>版本管理系统Git的很多操作也是基于链表。merge和rebase等操作就是直接将链表指针移动到对应的branch所对应的node。</li>
 <li>还有一些场景中，如果对使用线性表的长度和规模无法预测和控制时，会改为使用链表，比如通讯录等。</li>
 </ol>
-<h2 id="常见算法"><a href="#常见算法" class="headerlink" title="常见算法"></a>常见算法</h2><p>本文中所有的单向链表和双向链表的结构定义如下：</p>
+<h2 id="三-常见算法"><a href="#三-常见算法" class="headerlink" title="三. 常见算法"></a>三. 常见算法</h2><p>本文中所有的单向链表和双向链表的结构定义如下：</p>
 <pre><code>//单向链表    
 public class Node {
     private int value;
@@ -755,8 +755,8 @@ public Node getIntersectNodeOfTheTwoIntersectLinkedList(Node headNodeOfSourceLis
 
     return headNodeOfSourceList1;
 }
-</code></pre><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>本文中所有代码，可访问Github获取：<a href="https://github.com/sealyu/algorithm/tree/master/AlgorithmTests/src/main/java/com/haiboyu/algorithm/linkedlist" target="_blank" rel="external">LinkedListAlgorithms.java</a></p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+</code></pre><h2 id="四-代码"><a href="#四-代码" class="headerlink" title="四. 代码"></a>四. 代码</h2><p>本文中所有代码，可访问Github获取：<a href="https://github.com/sealyu/algorithm/tree/master/AlgorithmTests/src/main/java/com/haiboyu/algorithm/linkedlist" target="_blank" rel="external">LinkedListAlgorithms.java</a></p>
+<h2 id="五-参考文献"><a href="#五-参考文献" class="headerlink" title="五. 参考文献"></a>五. 参考文献</h2><ol>
 <li><a href="http://wuchong.me/blog/2014/03/25/interview-link-questions/" target="_blank" rel="external">Jark’s Blog - 面试精选：链表问题集锦</a></li>
 <li><a href="https://zh.wikipedia.org/wiki/%E9%93%BE%E8%A1%A8" target="_blank" rel="external">链表- 维基百科</a></li>
 <li><a href="http://xfhnever.com/2014/11/04/algorithm-linklistcycle/" target="_blank" rel="external">算法（十四）-单链表的环问题</a></li>
@@ -818,6 +818,10 @@ public Node getIntersectNodeOfTheTwoIntersectLinkedList(Node headNodeOfSourceLis
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/zh-Hans/2017/10/02/二叉树相关算法/" rel="prev" title="二叉树相关算法">
+                二叉树相关算法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -939,7 +943,7 @@ public Node getIntersectNodeOfTheTwoIntersectLinkedList(Node headNodeOfSourceLis
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1038,7 +1042,7 @@ public Node getIntersectNodeOfTheTwoIntersectLinkedList(Node headNodeOfSourceLis
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际应用"><span class="nav-text">实际应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见算法"><span class="nav-text">常见算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在O-1-时间删除链表节点"><span class="nav-text">1. 在O(1)时间删除链表节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-单链表的转置-transpose"><span class="nav-text">2. 单链表的转置(transpose)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-求链表倒数第k个节点"><span class="nav-text">3. 求链表倒数第k个节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-求链表的中间节点"><span class="nav-text">4. 求链表的中间节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-判断单链表是否存在环"><span class="nav-text">5. 判断单链表是否存在环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-找到环的入口点"><span class="nav-text">6. 找到环的入口点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-编程判断两个链表是否相交"><span class="nav-text">7. 编程判断两个链表是否相交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-两链表相交的第一个公共节点"><span class="nav-text">8. 两链表相交的第一个公共节点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-简介"><span class="nav-text">一. 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-实际应用"><span class="nav-text">二. 实际应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-常见算法"><span class="nav-text">三. 常见算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在O-1-时间删除链表节点"><span class="nav-text">1. 在O(1)时间删除链表节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-单链表的转置-transpose"><span class="nav-text">2. 单链表的转置(transpose)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-求链表倒数第k个节点"><span class="nav-text">3. 求链表倒数第k个节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-求链表的中间节点"><span class="nav-text">4. 求链表的中间节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-判断单链表是否存在环"><span class="nav-text">5. 判断单链表是否存在环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-找到环的入口点"><span class="nav-text">6. 找到环的入口点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-编程判断两个链表是否相交"><span class="nav-text">7. 编程判断两个链表是否相交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-两链表相交的第一个公共节点"><span class="nav-text">8. 两链表相交的第一个公共节点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-代码"><span class="nav-text">四. 代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-参考文献"><span class="nav-text">五. 参考文献</span></a></li></ol></div>
             
 
           </div>
@@ -1246,7 +1250,7 @@ public Node getIntersectNodeOfTheTwoIntersectLinkedList(Node headNodeOfSourceLis
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "search.xml";
+    var search_path = "";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
