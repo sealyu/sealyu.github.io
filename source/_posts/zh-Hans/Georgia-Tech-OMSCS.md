@@ -1,6 +1,6 @@
 ---
 title: Georgia Tech OMSCS
-date: 2017-10-10 21:43:58
+date: 2017-10-17 21:43:58
 categories:
   - Life
 tags: Life
@@ -16,7 +16,7 @@ tags: Life
 * 8月份国内归来，报着试试看的想法，重新开始申请
 * 一周内写完简历、Background、CareerObjective、StateOfPurpose，找同事写了3封Recommendation letter，8月18号提交申请
 * 10月10号收到GT的decision letter
-* 今天收到GT的final admission letter.
+* 10月17号收到GT的final admission letter.
 
 现在准备开始未来两到三年没日没夜一边工作一边读书的生活了。。。
 
