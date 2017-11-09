@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://haiboyu.me/en/2017/11/09/Multiple-columns-search-by-same-keyword-in-SQL/</loc>
+    <lastmod>2017-11-09T19:18:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>Multiple columns search by same keyword in SQL</title>
+        <pubTime>2017-11-09T19:10:18.000Z</pubTime>
+        
+        <tag>Database</tag>
+         
+         
+           
+             
+              <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2017-10-09T20:25:03.000Z</lastmod>
     <data>
@@ -127,12 +147,12 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2011/08/19/%E5%84%BF%E5%AD%90%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8MSN%E5%92%8C%E6%88%91%E7%9A%84%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-10-02T17:46:36.000Z</lastmod>
     <data>
         <display>
-        <title>美国费城买车小记</title>
-        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
+        <title>儿子第一次用MSN和我的聊天记录</title>
+        <pubTime>2011-08-19T10:43:16.000Z</pubTime>
         
         <tag>Life</tag>
          
@@ -140,6 +160,48 @@
            
              
               <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2008/04/17/sql%20server%20%E4%B8%AD%E5%88%A0%E9%99%A4%E9%BB%98%E8%AE%A4%E7%BA%A6%E6%9D%9F%E7%9A%84%E9%80%9A%E7%94%A8sql%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>sql server 中删除默认约束的通用sql脚本</title>
+        <pubTime>2008-04-17T10:31:00.000Z</pubTime>
+        
+        <tag>Database</tag>
+         
+         
+           
+             
+              <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2014/01/06/EJB3.0%20%E5%92%8C%20EJB2%20%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>EJB3.0 和 EJB2 的区别</title>
+        <pubTime>2014-01-06T19:35:23.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>EJB</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
           
         </display>
     </data>
@@ -187,114 +249,12 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2008/04/17/sql%20server%20%E4%B8%AD%E5%88%A0%E9%99%A4%E9%BB%98%E8%AE%A4%E7%BA%A6%E6%9D%9F%E7%9A%84%E9%80%9A%E7%94%A8sql%E8%84%9A%E6%9C%AC/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2017-10-02T17:46:36.000Z</lastmod>
     <data>
         <display>
-        <title>sql server 中删除默认约束的通用sql脚本</title>
-        <pubTime>2008-04-17T10:31:00.000Z</pubTime>
-        
-        <tag>Database</tag>
-         
-         
-           
-             
-              <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2011/08/19/%E5%84%BF%E5%AD%90%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8MSN%E5%92%8C%E6%88%91%E7%9A%84%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>儿子第一次用MSN和我的聊天记录</title>
-        <pubTime>2011-08-19T10:43:16.000Z</pubTime>
-        
-        <tag>Life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2014/01/06/EJB3.0%20%E5%92%8C%20EJB2%20%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>EJB3.0 和 EJB2 的区别</title>
-        <pubTime>2014-01-06T19:35:23.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>EJB</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>Javascript timezone issue with backend server in different zone</title>
-        <pubTime>2015-10-02T21:09:27.000Z</pubTime>
-        
-        <tag>Javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>L1 Visa renewal or extension?</title>
-        <pubTime>2016-10-11T22:09:24.000Z</pubTime>
-        
-        <tag>Life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/en/2016/05/04/failed-again-on-h1b-lottery/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>Failed Again on H1B lottery</title>
-        <pubTime>2016-05-04T22:48:31.000Z</pubTime>
+        <title>美国费城买车小记</title>
+        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
         
         <tag>Life</tag>
          
@@ -324,6 +284,66 @@
            
              
               <breadCrumb title="UI" url="http://haiboyu.me/categories/UI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/</loc>
+    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript timezone issue with backend server in different zone</title>
+        <pubTime>2015-10-02T21:09:27.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/en/2016/05/04/failed-again-on-h1b-lottery/</loc>
+    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Failed Again on H1B lottery</title>
+        <pubTime>2016-05-04T22:48:31.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
+    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>L1 Visa renewal or extension?</title>
+        <pubTime>2016-10-11T22:09:24.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
           
         </display>
     </data>

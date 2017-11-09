@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haiboyu.me/"/>
-  <updated>2017-10-09T20:25:03.000Z</updated>
+  <updated>2017-11-09T19:18:29.000Z</updated>
   <id>http://haiboyu.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Multiple columns search by same keyword in SQL</title>
+    <link href="http://haiboyu.me/en/2017/11/09/Multiple-columns-search-by-same-keyword-in-SQL/"/>
+    <id>http://haiboyu.me/en/2017/11/09/Multiple-columns-search-by-same-keyword-in-SQL/</id>
+    <published>2017-11-09T19:10:18.000Z</published>
+    <updated>2017-11-09T19:18:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sometime we have requirement to do fuzzy search in multiple columns of a database table.<br>For example:</p><p>A Person table has below columns:</p><p>Id | Name | CellPhone | WorkPhone | HomePhone</p><p><strong>Try to search the pearson with any phoneNumber has 666.</strong></p><p><strong>The normal way might be:</strong></p><pre><code>select * from Person where cellPhone like &apos;%666%&apos; or workPhone like &apos;%666%&apos; or homePhone like &apos;%666%&apos;</code></pre><p>This gonna be a performance issue if the rows are huge in the table.</p><p><strong>A better way to do this:</strong></p><pre><code>select * from Person where contact(cellPhone, &apos;/&apos;, workPhone, &apos;/&apos;, homePhone) like &apos;%666%&apos;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Sometime we have requirement to do fuzzy search in multiple columns of a database table.&lt;br&gt;For example:&lt;/p&gt;
+&lt;p&gt;A Person table has below 
+      
+    
+    </summary>
+    
+      <category term="Database" scheme="http://haiboyu.me/categories/Database/"/>
+    
+    
+      <category term="Database" scheme="http://haiboyu.me/tags/Database/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉树相关算法</title>
