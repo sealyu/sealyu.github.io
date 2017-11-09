@@ -1774,7 +1774,7 @@ varchar[(n)]长度为   n   个字节的可变长度且非   Unicode   的字符
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
