@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Haibo Yu">
 <meta property="og:description" content="最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-02T17:46:36.000Z">
+<meta property="og:updated_time" content="2017-09-22T20:55:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）">
 <meta name="twitter:description" content="最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的onFlushDirty()函数中对捕获的数据进行处理，产生对应的event数据并保存到数据库中。 例">
@@ -620,7 +620,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -911,7 +911,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

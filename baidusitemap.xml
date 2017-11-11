@@ -4,19 +4,19 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
-    <lastmod>2017-11-09T19:23:31.000Z</lastmod>
+    <loc>http://haiboyu.me/en/2017/11/10/Probability-Boys-and-gilrs/</loc>
+    <lastmod>2017-11-11T16:29:01.000Z</lastmod>
     <data>
         <display>
-        <title>Georgia Tech OMSCS</title>
-        <pubTime>2017-10-18T01:43:58.000Z</pubTime>
+        <title>Probability - Boys and girls</title>
+        <pubTime>2017-11-11T04:23:06.000Z</pubTime>
         
-        <tag>Life</tag>
+        <tag>Algorithm</tag>
          
          
            
              
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
           
         </display>
     </data>
@@ -25,7 +25,7 @@
     
   <url>
     <loc>http://haiboyu.me/en/2017/11/09/Multiple-columns-search-by-same-keyword-in-SQL/</loc>
-    <lastmod>2017-11-09T19:18:29.000Z</lastmod>
+    <lastmod>2017-11-10T00:42:12.000Z</lastmod>
     <data>
         <display>
         <title>Multiple columns search by same keyword in SQL</title>
@@ -44,19 +44,19 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-10-09T20:25:03.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
+    <lastmod>2017-10-19T02:13:49.000Z</lastmod>
     <data>
         <display>
-        <title>二叉树相关算法</title>
-        <pubTime>2017-10-02T20:03:23.000Z</pubTime>
+        <title>Georgia Tech OMSCS</title>
+        <pubTime>2017-10-18T01:43:58.000Z</pubTime>
         
-        <tag>Algorithm</tag>
+        <tag>Life</tag>
          
          
            
              
-              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
           
         </display>
     </data>
@@ -65,7 +65,7 @@
     
   <url>
     <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E9%93%BE%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-10-09T18:18:15.000Z</lastmod>
+    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
     <data>
         <display>
         <title>链表相关算法</title>
@@ -83,32 +83,30 @@
     </url>
 
     
-    
-    
-    
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
-    <lastmod>2017-10-03T20:14:15.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
     <data>
         <display>
-        <title>Design Pattern 笔记 - 代理模式(Proxy Pattern)</title>
-        <pubTime>2017-09-22T20:11:21.000Z</pubTime>
+        <title>二叉树相关算法</title>
+        <pubTime>2017-10-02T20:03:23.000Z</pubTime>
         
-        <tag>Design Pattern</tag>
+        <tag>Algorithm</tag>
          
          
            
              
-              <breadCrumb title="Design Pattern" url="http://haiboyu.me/categories/Design-Pattern/"/>
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
           
         </display>
     </data>
     </url>
 
     
+    
   <url>
     <loc>http://haiboyu.me/zh-Hans/2017/09/25/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%97%E5%92%8C%E9%98%BF%E6%8B%89%E4%BC%AF%E6%95%B0%E5%AD%97%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2017-10-03T19:48:04.000Z</lastmod>
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
     <data>
         <display>
         <title>中文数字和阿拉伯数字的转换</title>
@@ -127,90 +125,30 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2011/08/19/%E5%84%BF%E5%AD%90%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8MSN%E5%92%8C%E6%88%91%E7%9A%84%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
     <data>
         <display>
-        <title>儿子第一次用MSN和我的聊天记录</title>
-        <pubTime>2011-08-19T10:43:16.000Z</pubTime>
+        <title>Design Pattern 笔记 - 代理模式(Proxy Pattern)</title>
+        <pubTime>2017-09-22T20:11:21.000Z</pubTime>
         
-        <tag>Life</tag>
+        <tag>Design Pattern</tag>
          
          
            
              
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+              <breadCrumb title="Design Pattern" url="http://haiboyu.me/categories/Design-Pattern/"/>
           
         </display>
     </data>
     </url>
 
     
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2014/01/06/EJB3.0%20%E5%92%8C%20EJB2%20%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>EJB3.0 和 EJB2 的区别</title>
-        <pubTime>2014-01-06T19:35:23.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>EJB</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2010/11/29/nvarchar%E4%B8%8Evarchar%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>nvarchar与varchar的区别</title>
-        <pubTime>2010-11-29T15:51:15.000Z</pubTime>
-        
-        <tag>Database</tag>
-         
-         
-           
-             
-              <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2011/04/01/%E4%B8%80%E4%B8%AA%E5%8F%A5%E5%8F%B7%E5%BC%95%E5%8F%91%E7%9A%84%E6%83%A8%E6%A1%88/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>一个句号引发的惨案</title>
-        <pubTime>2011-04-01T08:40:42.000Z</pubTime>
-        
-        <tag>Life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://haiboyu.me/zh-Hans/2008/04/17/sql%20server%20%E4%B8%AD%E5%88%A0%E9%99%A4%E9%BB%98%E8%AE%A4%E7%BA%A6%E6%9D%9F%E7%9A%84%E9%80%9A%E7%94%A8sql%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     <data>
         <display>
         <title>sql server 中删除默认约束的通用sql脚本</title>
@@ -230,7 +168,7 @@
     
   <url>
     <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     <data>
         <display>
         <title>美国费城买车小记</title>
@@ -249,48 +187,8 @@
 
     
   <url>
-    <loc>http://haiboyu.me/en/2017/05/16/red-black-bst-with-no-extra-memory/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>Red–black BST with no extra memory</title>
-        <pubTime>2017-05-16T17:54:16.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2008/05/09/Interceptor%20%E4%B8%ADonFlushDirty()%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E5%A4%9A%E6%AC%A1%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%88Hibernate%20%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8FBug%EF%BC%89/</loc>
-    <lastmod>2017-10-02T17:46:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）</title>
-        <pubTime>2008-05-09T11:59:00.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     <data>
         <display>
         <title>L1 Visa renewal or extension?</title>
@@ -309,8 +207,28 @@
 
     
   <url>
+    <loc>http://haiboyu.me/en/2017/05/16/red-black-bst-with-no-extra-memory/</loc>
+    <lastmod>2017-10-01T18:38:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>Red–black BST with no extra memory</title>
+        <pubTime>2017-05-16T17:54:16.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/en/2016/10/05/jsf-2-richfaces-4-seam/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <lastmod>2017-09-22T20:56:58.000Z</lastmod>
     <data>
         <display>
         <title>JSF 2 + Richfaces 4 + Seam</title>
@@ -331,8 +249,28 @@
 
     
   <url>
+    <loc>http://haiboyu.me/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/</loc>
+    <lastmod>2017-09-22T20:56:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript timezone issue with backend server in different zone</title>
+        <pubTime>2015-10-02T21:09:27.000Z</pubTime>
+        
+        <tag>Javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/en/2016/05/04/failed-again-on-h1b-lottery/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <lastmod>2017-09-22T20:56:48.000Z</lastmod>
     <data>
         <display>
         <title>Failed Again on H1B lottery</title>
@@ -351,19 +289,101 @@
 
     
   <url>
-    <loc>http://haiboyu.me/en/2015/10/02/javascript-timezone-issue-with-backend-server-in-different-zone/</loc>
-    <lastmod>2017-09-25T17:44:21.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2011/08/19/%E5%84%BF%E5%AD%90%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8MSN%E5%92%8C%E6%88%91%E7%9A%84%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-09-22T20:55:47.000Z</lastmod>
     <data>
         <display>
-        <title>Javascript timezone issue with backend server in different zone</title>
-        <pubTime>2015-10-02T21:09:27.000Z</pubTime>
+        <title>儿子第一次用MSN和我的聊天记录</title>
+        <pubTime>2011-08-19T10:43:16.000Z</pubTime>
         
-        <tag>Javascript</tag>
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2008/05/09/Interceptor%20%E4%B8%ADonFlushDirty()%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E5%A4%9A%E6%AC%A1%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%88Hibernate%20%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8FBug%EF%BC%89/</loc>
+    <lastmod>2017-09-22T20:55:33.000Z</lastmod>
+    <data>
+        <display>
+        <title>Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）</title>
+        <pubTime>2008-05-09T11:59:00.000Z</pubTime>
+        
+        <tag>Java</tag>
          
          
            
              
               <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2010/11/29/nvarchar%E4%B8%8Evarchar%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2017-09-22T20:55:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>nvarchar与varchar的区别</title>
+        <pubTime>2010-11-29T15:51:15.000Z</pubTime>
+        
+        <tag>Database</tag>
+         
+         
+           
+             
+              <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2014/01/06/EJB3.0%20%E5%92%8C%20EJB2%20%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
+    <lastmod>2017-09-22T20:55:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>EJB3.0 和 EJB2 的区别</title>
+        <pubTime>2014-01-06T19:35:23.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>EJB</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://haiboyu.me/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2011/04/01/%E4%B8%80%E4%B8%AA%E5%8F%A5%E5%8F%B7%E5%BC%95%E5%8F%91%E7%9A%84%E6%83%A8%E6%A1%88/</loc>
+    <lastmod>2017-09-22T20:50:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个句号引发的惨案</title>
+        <pubTime>2011-04-01T08:40:42.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
           
         </display>
     </data>
