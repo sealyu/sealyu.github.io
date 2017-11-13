@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://haiboyu.me/zh-Hans/2017/11/09/Design-Pattern-Note-State-Pattern/</loc>
+    <lastmod>2017-11-13T00:18:59.723Z</lastmod>
+    <data>
+        <display>
+        <title>Design Pattern Note-State Pattern</title>
+        <pubTime>2017-11-10T00:12:05.000Z</pubTime>
+        
+        <tag>Design Pattern</tag>
+         
+         
+           
+             
+              <breadCrumb title="Design Pattern" url="http://haiboyu.me/categories/Design-Pattern/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/en/2017/11/10/Probability-Boys-and-gilrs/</loc>
     <lastmod>2017-11-11T16:29:01.000Z</lastmod>
     <data>
@@ -124,6 +144,8 @@
     </url>
 
     
+    
+    
   <url>
     <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
     <lastmod>2017-10-03T23:08:05.000Z</lastmod>
@@ -144,7 +166,25 @@
     </url>
 
     
-    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>美国费城买车小记</title>
+        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://haiboyu.me/zh-Hans/2008/04/17/sql%20server%20%E4%B8%AD%E5%88%A0%E9%99%A4%E9%BB%98%E8%AE%A4%E7%BA%A6%E6%9D%9F%E7%9A%84%E9%80%9A%E7%94%A8sql%E8%84%9A%E6%9C%AC/</loc>
@@ -160,26 +200,6 @@
            
              
               <breadCrumb title="Database" url="http://haiboyu.me/categories/Database/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
-    <data>
-        <display>
-        <title>美国费城买车小记</title>
-        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
-        
-        <tag>Life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
           
         </display>
     </data>
