@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://haiboyu.me/en/2017/12/27/Pandas-Selection-by-Position/</loc>
+    <lastmod>2017-12-27T19:17:26.884Z</lastmod>
+    <data>
+        <display>
+        <title>Pandas Selection by Position</title>
+        <pubTime>2017-12-27T19:02:33.000Z</pubTime>
+        
+        <tag>Machine Learning</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Machine Learning" url="http://haiboyu.me/categories/Machine-Learning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/zh-Hans/2017/11/09/Design-Pattern-Note-State-Pattern/</loc>
     <lastmod>2017-11-13T00:18:59.723Z</lastmod>
     <data>
@@ -125,28 +147,6 @@
     
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/09/25/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%97%E5%92%8C%E9%98%BF%E6%8B%89%E4%BC%AF%E6%95%B0%E5%AD%97%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>中文数字和阿拉伯数字的转换</title>
-        <pubTime>2017-09-25T22:05:32.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-  <url>
     <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
     <lastmod>2017-10-03T23:08:05.000Z</lastmod>
     <data>
@@ -166,20 +166,22 @@
     </url>
 
     
+    
+    
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2017/09/25/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%97%E5%92%8C%E9%98%BF%E6%8B%89%E4%BC%AF%E6%95%B0%E5%AD%97%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
     <data>
         <display>
-        <title>美国费城买车小记</title>
-        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
+        <title>中文数字和阿拉伯数字的转换</title>
+        <pubTime>2017-09-25T22:05:32.000Z</pubTime>
         
-        <tag>Life</tag>
+        <tag>Algorithm</tag>
          
          
            
              
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
           
         </display>
     </data>
@@ -213,6 +215,26 @@
         <display>
         <title>L1 Visa renewal or extension?</title>
         <pubTime>2016-10-11T22:09:24.000Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2017-10-01T18:38:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>美国费城买车小记</title>
+        <pubTime>2016-04-28T23:25:37.000Z</pubTime>
         
         <tag>Life</tag>
          

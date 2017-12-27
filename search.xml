@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Pandas Selection by Position]]></title>
+    <url>%2Fen%2F2017%2F12%2F27%2FPandas-Selection-by-Position%2F</url>
+    <content type="text"><![CDATA[There are multiple ways to select and index rows and columns from Pandas DataFrames: Selection Options There’s three main options to achieve the selection and indexing activities in Pandas, which can be confusing. The three selection cases and methods covered in this post are: Selecting data by row numbers (.iloc). Purely integer-location based indexing for selection by position. It is primarily integer position based (from 0 to length-1 of the axis), but may also be used with a boolean array. Selecting data by label or by a conditional statment (.loc). It is primarily label based, but may also be used with a boolean array Selecting in a hybrid approach (.ix) (now Deprecated in Pandas 0.20.1) Below are some examples: iloc: # Single selections using iloc and DataFrame # Rows: data.iloc[0] # first row of data frame (Aleshia Tomkiewicz) - Note a Series data type output. data.iloc[1] # second row of data frame (Evan Zigomalas) data.iloc[-1] # last row of data frame (Mi Richan) # Columns: data.iloc[:,0] # first column of data frame (first_name) data.iloc[:,1] # second column of data frame (last_name) data.iloc[:,-1] # last column of data frame (id) # Multiple row and column selections using iloc and DataFrame data.iloc[0:5] # first five rows of dataframe data.iloc[:, 0:2] # first two columns of data frame with all rows data.iloc[[0,3,6,24], [0,5,6]] # 1st, 4th, 7th, 25th row + 1st 6th 7th columns. data.iloc[0:5, 5:8] # first 5 rows and 5th, 6th, 7th columns of data frame (county -&gt; phone1). loc # Select rows with index values &apos;Andrade&apos; and &apos;Veness&apos;, with all columns between &apos;city&apos; and &apos;email&apos; data.loc[[&apos;Andrade&apos;, &apos;Veness&apos;], &apos;city&apos;:&apos;email&apos;] # Select same rows, with just &apos;first_name&apos;, &apos;address&apos; and &apos;city&apos; columns data.loc[&apos;Andrade&apos;:&apos;Veness&apos;, [&apos;first_name&apos;, &apos;address&apos;, &apos;city&apos;]] # Change the index to be based on the &apos;id&apos; column data.set_index(&apos;id&apos;, inplace=True) # select the row with &apos;id&apos; = 487 data.loc[487] Reference Pandas Data Selection]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Probability - Boys and girls]]></title>
     <url>%2Fen%2F2017%2F11%2F10%2FProbability-Boys-and-gilrs%2F</url>
     <content type="text"><![CDATA[Questions:In a country where everyone wants a boy, each family continues having babies till they have a boy. After some time, what is the proportion of boys to girls in the country? (Assuming probability of having a boy or a girl is the same) Solution:Assume finally the numbers of boys is C. Then: Number of girls = 0*(Probability of 0 girls) + 1*(Probability of 1 girl) + 2*(Probability of 2 girls) + … Number of girls = 0*(C*1/2) + 1*(C*1/2*1/2) + 2*(C*1/2*1/2*1/2) + … Number of girls = 0 + C/4 + 2*C/8 + 2*C/16 + … Number of girls = C (using mathematical formulas; it becomes apparent if you just sum up the first 4-5 terms) Without using math:Logically thinking, It stays 50%. As long as the chance for each child is 50%, it won’t change. Using math: AnswerBoys and Girls ratio: 1:1]]></content>
