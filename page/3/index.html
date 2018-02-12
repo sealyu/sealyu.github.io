@@ -336,6 +336,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://haiboyu.me/zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Haibo Yu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Haibo Yu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/" itemprop="url">Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2008-05-09T07:59:00+08:00">
+                2008-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          最近在项目中遇到一个奇怪的问题，在使用Hibernate拦截器捕获实体变化并进行处理时，发现其中的onFlushDirty()函数执行了很多次，导致进行处理时产生很多重复数据。具体问题如下：使用一个类继承Hibernate的EmptyInterceptor类来对程序中的实体变化进行拦截，并在其中的o
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/zh-Hans/2008/05/09/Interceptor 中onFlushDirty()函数执行多次的问题（Hibernate 的一个小Bug）/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://haiboyu.me/zh-Hans/2008/04/17/sql server 中删除默认约束的通用sql脚本/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -367,7 +526,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2008-04-17T06:31:00-04:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2008-04-17T06:31:00+08:00">
                 2008-04-17
               </time>
             
@@ -532,7 +691,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">21</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -543,7 +702,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -638,7 +797,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

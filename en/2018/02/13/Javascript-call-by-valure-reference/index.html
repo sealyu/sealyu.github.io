@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Design Pattern," />
+  <meta name="keywords" content="Javascript," />
 
 
 
@@ -96,20 +96,18 @@
 
 
 
-<meta name="description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
-<meta name="keywords" content="Design Pattern">
+<meta name="description" content="In this post, we will look into pass by value and pass by reference in Javascript. Let’s see what is pass by value and pass by reference before looking into its javascript context. Pass by Value: In P">
+<meta name="keywords" content="Javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Design Pattern 笔记 - 代理模式(Proxy Pattern)">
-<meta property="og:url" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/index.html">
+<meta property="og:title" content="Javascript call by valure&#x2F;reference">
+<meta property="og:url" content="http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/index.html">
 <meta property="og:site_name" content="Haibo Yu">
-<meta property="og:description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png">
-<meta property="og:updated_time" content="2017-10-03T23:08:05.000Z">
+<meta property="og:description" content="In this post, we will look into pass by value and pass by reference in Javascript. Let’s see what is pass by value and pass by reference before looking into its javascript context. Pass by Value: In P">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-02-12T22:09:56.091Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Design Pattern 笔记 - 代理模式(Proxy Pattern)">
-<meta name="twitter:description" content="一. 定义代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。  二. 常用场景1. 远程代理为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远">
-<meta name="twitter:image" content="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png">
+<meta name="twitter:title" content="Javascript call by valure&#x2F;reference">
+<meta name="twitter:description" content="In this post, we will look into pass by value and pass by reference in Javascript. Let’s see what is pass by value and pass by reference before looking into its javascript context. Pass by Value: In P">
 
 
 
@@ -124,7 +122,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -138,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/"/>
+  <link rel="canonical" href="http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/"/>
 
 
 
 
 
-  <title>Design Pattern 笔记 - 代理模式(Proxy Pattern) | Haibo Yu</title>
+  <title>Javascript call by valure/reference | Haibo Yu</title>
   
 
 
@@ -172,7 +170,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -220,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -230,7 +228,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -240,7 +238,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -250,7 +248,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -260,7 +258,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -270,7 +268,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
             
-            站点地图
+            Sitemap
           </a>
         </li>
       
@@ -283,7 +281,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -303,7 +301,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
+             placeholder="Searching..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -341,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/">
+    <link itemprop="mainEntityOfPage" href="http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Haibo Yu">
@@ -358,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Design Pattern 笔记 - 代理模式(Proxy Pattern)</h1>
+          <h1 class="post-title" itemprop="name headline">Javascript call by valure/reference</h1>
         
 
         <div class="post-meta">
@@ -368,10 +366,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T16:11:21+08:00">
-                2017-09-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-13T06:05:41+08:00">
+                2018-02-13
               </time>
             
 
@@ -389,12 +387,12 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Design-Pattern/" itemprop="url" rel="index">
-                    <span itemprop="name">Design Pattern</span>
+                  <a href="/categories/Javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
                   </a>
                 </span>
 
@@ -411,9 +409,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/#comments" itemprop="discussionUrl">
+                <a href="/en/2018/02/13/Javascript-call-by-valure-reference/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/" itemprop="commentCount"></span>
+                        data-disqus-identifier="en/2018/02/13/Javascript-call-by-valure-reference/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -446,29 +444,55 @@
       
 
       
-        <h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一. 定义"></a>一. 定义</h2><p>代理模式(Proxy Pattern) ：给某一个对象提供一个代 理，并由代理对象控制对原对象的引用。代理模式的英 文叫做Proxy或Surrogate，它是一种对象结构型模式。</p>
-<img src="/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/proxypattern.png" alt="Proxy Pattern" title="Proxy Pattern">
-<h2 id="二-常用场景"><a href="#二-常用场景" class="headerlink" title="二. 常用场景"></a>二. 常用场景</h2><h3 id="1-远程代理"><a href="#1-远程代理" class="headerlink" title="1. 远程代理"></a>1. 远程代理</h3><p>为对象在不同的地址空间提供局部代表，比如远程方法调用（RMI）利用代理模式，使得在其他 JVM 中执行的对象就像本地对象一样；企业 JavaBeans （EJB）利用代理模式添加远程调用、安全性和事务分界；而 JAX-RPC Web 服务则用代理模式让远程服务表现得像本地对象一样。代理可以用来提供远程控制（就像在 RMI、EJB 和 JAX-RPC 中那样），用安全性策略包装对象（EJB）、为昂贵的对象（EJB 实体 Bean）提供惰性装入，或者添加检测工具（例如日志记录）。</p>
-<h3 id="2-图片代理"><a href="#2-图片代理" class="headerlink" title="2. 图片代理"></a>2. 图片代理</h3><p>一些网站或者程序中在显示图片列表时使用缩略图显示，只有在需要放大浏览或者下载时才访问真正的原图。</p>
-<h3 id="3-保护代理"><a href="#3-保护代理" class="headerlink" title="3. 保护代理"></a>3. 保护代理</h3><p>可以控制对一个对象的访问权限，为不同用户提供不同级别的使用权限</p>
-<h3 id="4-虚拟代理"><a href="#4-虚拟代理" class="headerlink" title="4. 虚拟代理"></a>4. 虚拟代理</h3><p>如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建。比较典型的例子就是hibernate的延迟加载，Hibernate结合Javassist或CGLIB动态生成代理对象， 通过代理模式来“推迟”加载关联实体的时间，如果程序并不需要访问关联实体，那程序就不会去抓取关联实体。这样既可以节省系统的内存开销，也可以缩短 Hibernate 加载实体的时间。</p>
-<h3 id="5-动态代理"><a href="#5-动态代理" class="headerlink" title="5. 动态代理"></a>5. 动态代理</h3><p>比较典型的应用场景：</p>
-<ol>
-<li>缓存系统</li>
-<li>spring AOP面向切面编程。</li>
-<li>Spring中的事务管理</li>
-<li>RMI在JDK 5后的版本也是使用动态代理生成stub对象。</li>
-<li>单元测试中也使用动态代理来mock对象。</li>
-</ol>
-<h2 id="三-优缺点"><a href="#三-优缺点" class="headerlink" title="三. 优缺点"></a>三. 优缺点</h2><h3 id="1-优点"><a href="#1-优点" class="headerlink" title="1. 优点"></a>1. 优点</h3><ol>
-<li>代理模式可以在一定程度上降低系统的耦合度，</li>
-<li>虚拟代理通过使用一个小对象来代表一个大对象，可以减少系 统资源的消耗，对系统进行优化并提高运行速度。</li>
-<li>保护代理可以控制对真实对象的使用权限。</li>
-<li>通过在代理对象中添加业务逻辑来实现对一些系统统一行为的定制和扩展，从而能够更灵活地处理对原有对象的控制和访问。</li>
-</ol>
-<h3 id="2-缺点"><a href="#2-缺点" class="headerlink" title="2. 缺点"></a>2. 缺点</h3><ol>
-<li>由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢</li>
-<li>实现代理模式需要额外的工作，有些代理模式的实现 非常复杂</li>
+        <p>In this post, we will look into pass by value and pass by reference in Javascript.</p>
+<p>Let’s see what is pass by value and pass by reference before looking into its javascript context.</p>
+<p><strong>Pass by Value:</strong></p>
+<p>In Pass by Value, Function is called by directly passing the value of the variable as the argument. Changing the argument inside the function doesn’t affect the variable passed from outside the function.</p>
+<p>Javascript always pass by value so changing the value of the variable never changes the underlying primitive (String or number).</p>
+<pre><code>function callByValue(varOne, varTwo) { 
+  console.log(&quot;Inside Call by Value Method&quot;); 
+  varOne = 100; 
+  varTwo = 200; 
+  console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); 
+} 
+let varOne = 10; 
+let varTwo = 20; 
+console.log(&quot;Before Call by Value Method&quot;); 
+console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); 
+callByValue(varOne, varTwo) 
+console.log(&quot;After Call by Value Method&quot;); 
+console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); 
+</code></pre><p>output will be : </p>
+<p>Before Call by Value Method </p>
+<p>varOne =10 varTwo =20 </p>
+<p>Inside Call by Value Method </p>
+<p>varOne =100 varTwo =200 </p>
+<p>After Call by Value Method </p>
+<p>varOne =10 varTwo =20</p>
+<p>However, when a variable refers to an object which includes array, the value is the reference to the object.</p>
+<p><strong>Pass by Reference:</strong></p>
+<p>In Pass by Reference, Function is called by directly passing the reference/address of the variable as the argument. Changing the argument inside the function affect the variable passed from outside the function. In Javascript objects and arrays follows pass by reference.</p>
+<pre><code>function callByReference(varObj) { 
+  console.log(&quot;Inside Call by Reference Method&quot;); 
+  varObj.a = 100; 
+  console.log(varObj); 
+} 
+let varObj = {a:1};
+console.log(&quot;Before Call by Reference Method&quot;); 
+console.log(varObj);
+callByReference(varObj) 
+console.log(&quot;After Call by Reference Method&quot;); 
+console.log(varObj);
+</code></pre><p>output will be : </p>
+<p>Before Call by Reference Method </p>
+<p>{a: 1} </p>
+<p>Inside Call by Reference Method </p>
+<p>{a: 100} </p>
+<p>After Call by Reference Method </p>
+<p>{a: 100}</p>
+<p>so if we are passing object or array as an argument to the method, then there is a possibility that value of the object can change.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="https://codeburst.io/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c" target="_blank" rel="external">Pass By Value And Pass By Reference In JavaScript</a></li>
 </ol>
 
       
@@ -485,16 +509,16 @@
       <div>
         <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者：</strong>
+    <strong>Post author:</strong>
     Haibo Yu
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/" title="Design Pattern 笔记 - 代理模式(Proxy Pattern)">http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</a>
+    <strong>Post link:</strong>
+    <a href="http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/" title="Javascript call by valure/reference">http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
   </li>
 </ul>
 
@@ -505,7 +529,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Design-Pattern/" rel="tag"># Design Pattern</a>
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
           
         </div>
       
@@ -518,8 +542,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/en/2017/05/16/red-black-bst-with-no-extra-memory/" rel="next" title="Red–black BST with no extra memory">
-                <i class="fa fa-chevron-left"></i> Red–black BST with no extra memory
+              <a href="/en/2017/12/27/Pandas-Selection-by-Position/" rel="next" title="Pandas Selection by Position">
+                <i class="fa fa-chevron-left"></i> Pandas Selection by Position
               </a>
             
           </div>
@@ -527,10 +551,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/zh-Hans/2017/09/25/中文数字和阿拉伯数字的转换/" rel="prev" title="中文数字和阿拉伯数字的转换">
-                中文数字和阿拉伯数字的转换 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -629,10 +649,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -653,7 +673,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">22</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -664,7 +684,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
                 <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -675,7 +695,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
                 <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -751,7 +771,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-定义"><span class="nav-text">一. 定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-常用场景"><span class="nav-text">二. 常用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-远程代理"><span class="nav-text">1. 远程代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-图片代理"><span class="nav-text">2. 图片代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-保护代理"><span class="nav-text">3. 保护代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-虚拟代理"><span class="nav-text">4. 虚拟代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-动态代理"><span class="nav-text">5. 动态代理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-优缺点"><span class="nav-text">三. 优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-优点"><span class="nav-text">1. 优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-缺点"><span class="nav-text">2. 缺点</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -784,11 +804,11 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Gemini
   </a>
@@ -929,9 +949,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/';
-          this.page.identifier = 'zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/';
-          this.page.title = 'Design Pattern 笔记 - 代理模式(Proxy Pattern)';
+          this.page.url = 'http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/';
+          this.page.identifier = 'en/2018/02/13/Javascript-call-by-valure-reference/';
+          this.page.title = 'Javascript call by valure/reference';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://haibo-yu.disqus.com/embed.js';
