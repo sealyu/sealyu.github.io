@@ -1,5 +1,5 @@
 ---
-title: Javascript call by valure/reference
+title: Javascript call by value/reference
 date: 2018-02-13 06:05:41
 categories:
   - Javascript

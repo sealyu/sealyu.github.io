@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haiboyu.me/"/>
-  <updated>2018-02-12T22:09:56.091Z</updated>
+  <updated>2018-05-08T06:01:28.631Z</updated>
   <id>http://haiboyu.me/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Javascript call by valure/reference</title>
+    <title>Microsoft Interview Algorithm questions</title>
+    <link href="http://haiboyu.me/en/2018/05/01/Microsoft-Interview-Algorithm-questions/"/>
+    <id>http://haiboyu.me/en/2018/05/01/Microsoft-Interview-Algorithm-questions/</id>
+    <published>2018-05-01T15:41:39.000Z</published>
+    <updated>2018-05-08T06:01:28.631Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Question1"><a href="#Question1" class="headerlink" title="Question1:"></a>Question1:</h2><p>Merge 2 sorted linked list(In ascendant order, duplicate allowed)do not use recursion.It takes in two already sorted linked lists (in ascendant order, duplicates allowed) and is supposed to merge them into a single sorted linked list (in ascendant order, duplicates allowed) and returns the new head.</p><h2 id="Solution1"><a href="#Solution1" class="headerlink" title="Solution1:"></a>Solution1:</h2><p>This is a simple algorithm quesiton, we can definitely make the time complexity O(n).</p><pre><code>/** * Merge 2 sorted linked list into a single sorted linked list. * @param startNode1 The start node of linked list 1 * @param startNode2 The start node of linked list 2 * @return The merged sorted linked list */private Node mergeSortedLinkedList(Node startNode1, Node startNode2){    Node headerNode = new Node(0);    Node lastNode = headerNode;    //Loop and compare the node between list 1 and list 2 until any of them end.    while (startNode1 != null &amp;&amp; startNode2 != null) {        if (startNode1.data &lt; startNode2.data) {            lastNode.next = startNode1;            startNode1 = startNode1.next;        } else {            lastNode.next = startNode2;            startNode2 = startNode2.next;        }        lastNode = lastNode.next;    }    //Append the un-finished one to the result    if (startNode1 != null) {        lastNode.next = startNode1;    } else {        lastNode.next = startNode2;    }    return headerNode.next;}</code></pre><h2 id="Question2"><a href="#Question2" class="headerlink" title="Question2:"></a>Question2:</h2><p>Given a list of scope and value pair like ([0,100] 1, [20,50) 3, [30,50] -3, (50,60] 2), find the maximum overlap value. Make the time complexity O(n)</p><h2 id="Solution2"><a href="#Solution2" class="headerlink" title="Solution2:"></a>Solution2:</h2><p>This is similar to the problem referred in <a href="http://www.zrzahid.com/maximum-number-of-overlapping-intervals/" target="_blank" rel="external">Maximum number of overlapping intervals – Merge Overlapping Intervals – Max Task Load</a></p><p>Another version of this problem could be –</p><p>Given a list of n Jobs with start time, end time and CPU load when it is active at any moment. If all the jobs are running at the same machine then find the maximum CPU load at any time.</p><p>For example, let’s define a job as a tuple of (start_time, end_time, weight) where weight is the load of that job at any time when active. Then,</p><pre><code>jobs = {(3, 7, 4), (1, 3, 6), (4, 9, 5)} –&gt; max load = 10.jobs = {(3, 7, 4), (1, 3, 6), (4, 9, 5), (10, 11, 11)} –&gt; max load = 11.jobs = {(3, 7, 4), (1, 3, 6), (4, 9, 5), (10, 11, 11),(3, 4, 2)} –&gt; max load = 12.</code></pre><p>Note that, this is similar to finding maximum overlap where we maximize total weight (i.e. load) instead of maximizing total number of overlaps. We can similarly sort the jobs based on start and end time in separate arrays and then find overlap incrementally as we did previously. Each time we have one more overlapping interval we update current load with the current job and keep updating global max. When we see an interval to end then we need to subtract the load of this job from the running load. Below is a O(nLogn) time algorithm to find the max total load of all the jobs active at certain time.</p><pre><code>public static int maxLoad(Job[] jobs){    int maxLoad = 0;    int curLoad = 0;    Job[] start = Arrays.copyOf(jobs, jobs.length);    Job[] end = Arrays.copyOf(jobs, jobs.length);    Arrays.sort(start, new Comparator&lt;Job&gt;() {        @Override        public int compare(Job o1, Job o2) {            return Integer.compare(o1.start, o2.start);        }    });    Arrays.sort(end, new Comparator&lt;Job&gt;() {        @Override        public int compare(Job o1, Job o2) {            return Integer.compare(o1.finish , o2.finish);        }    });    int i = 0, j = 0;    while(i &lt; start.length &amp;&amp; j &lt; end.length){        if(start[i].start &lt;= end[j].finish){            curLoad += start[i].weight;            maxLoad = Math.max(maxLoad, curLoad);            i++;        }        else{            curLoad -= end[j].weight;            j++;        }    }    return maxLoad;}</code></pre><h2 id="Question3"><a href="#Question3" class="headerlink" title="Question3:"></a>Question3:</h2><p>Given an unsorted integer array, find the smallest missing positive integer.</p><p>Example 1:</p><pre><code>Input: [1,2,0]Output: 3</code></pre><p>Example 2:</p><pre><code>Input: [3,4,-1,1]Output: 2</code></pre><p>Example 3:</p><pre><code>Input: [7,8,9,11,12]Output: 1</code></pre><p>Note:</p><p>Your algorithm should run in O(n) time and uses constant extra space.</p><h2 id="Solution3"><a href="#Solution3" class="headerlink" title="Solution3:"></a>Solution3:</h2><p>A simple way to make it work is to sort the array using QuickSort and loop the array to find the first missing positive number. But the time complexity then becomes O(N*LogN) and does not meet the requirement.<br>Then the solution would be to use the index of the array:</p><ol><li>First loop the array, compare the value of the postion and it’s index, try to put all numbers to the place so array[i] = i+1.</li><li>Then loop the array and the first element whose value does not equal index+1 is the missing value. If all matchs, then the length+1 should be the first one missing.</li></ol><pre><code>public int firstMissingPositive(int[] nums) {    int len = nums.length;    //Loop the array, only process the positive number, put all the value to the index to make it nums[i] = i    for(int i = 0; i &lt; len; i++){        while(nums[i] &gt; 0 &amp;&amp; nums[i] &lt;= len &amp;&amp; nums[nums[i] - 1] != nums[i]){            swap(nums, i, nums[i] - 1);        }    }    //The first index whose value does not equal index+1 is the missing value    for(int i = 0; i &lt; len; i++){        if(nums[i] != i + 1)            return i + 1;    }    //If all matchs, then the length + 1 should be the first missing postive number    return len + 1;}private void swap(int[] array, int start, int end){    int temp = array[start];    array[start] = array[end];    array[end] = temp;}</code></pre><h2 id="Question4"><a href="#Question4" class="headerlink" title="Question4:"></a>Question4:</h2><p>Given a set of integer A(s1,s2,s3,…), S is A’s sub set. Given S1<code>|S2</code>|S3’|.. =X(按位或), find after deleting number N from A to make all S can’t generate Y. Make it O(n).</p><h2 id="Solution4"><a href="#Solution4" class="headerlink" title="Solution4:"></a>Solution4:</h2><ol><li>Get the positions of the bits of Y which equals </li><li>Create a HashTable with length 32, every key stores the number of values whose bit on this key equal 1.</li><li>Loop all integer numbers of A, for every value, update the HashTable, for all postison of the bits equal 1, update the hashtable[position]++</li><li>Find the minimum value of the Hashtable, is the number of smallest number of elements need to be deleted. After deleting these elements, it will not be able to generate the Y, because there’s 1 bit which can’t be 1. </li></ol><h2 id="Question5"><a href="#Question5" class="headerlink" title="Question5:"></a>Question5:</h2><p>Convex hull problem: Given a plane and many points, find the convex hull so all points either inside of the hull or on the edge.</p><pre><code>Input: A set of pointsOutput: The set of points on the edge.</code></pre><h2 id="Solution5"><a href="#Solution5" class="headerlink" title="Solution5:"></a>Solution5:</h2><p>The detail solution can ben found <a href="https://algs4.cs.princeton.edu/99hull/GrahamScan.java.html" target="_blank" rel="external">GrahamScan.java</a></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="http://www.zrzahid.com/maximum-number-of-overlapping-intervals/" target="_blank" rel="external">Maximum number of overlapping intervals – Merge Overlapping Intervals – Max Task Load</a></li><li>[Convex Hull] (<a href="https://en.wikipedia.org/wiki/Convex_hull" target="_blank" rel="external">https://en.wikipedia.org/wiki/Convex_hull</a>)</li><li>[Graham scan] (<a href="https://en.wikipedia.org/wiki/Graham_scan" target="_blank" rel="external">https://en.wikipedia.org/wiki/Graham_scan</a>)</li><li><a href="https://algs4.cs.princeton.edu/99hull/GrahamScan.java.html" target="_blank" rel="external">GrahamScan.java</a></li><li><a href="https://zhuanlan.zhihu.com/p/33355636" target="_blank" rel="external">凸包（Convex Hull）</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Question1&quot;&gt;&lt;a href=&quot;#Question1&quot; class=&quot;headerlink&quot; title=&quot;Question1:&quot;&gt;&lt;/a&gt;Question1:&lt;/h2&gt;&lt;p&gt;Merge 2 sorted linked list(In ascendant 
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://haiboyu.me/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="http://haiboyu.me/tags/Algorithm/"/>
+    
+      <category term="Interview" scheme="http://haiboyu.me/tags/Interview/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript call by value/reference</title>
     <link href="http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/"/>
     <id>http://haiboyu.me/en/2018/02/13/Javascript-call-by-valure-reference/</id>
     <published>2018-02-12T22:05:41.000Z</published>
-    <updated>2018-02-12T22:09:56.091Z</updated>
+    <updated>2018-05-01T15:35:46.617Z</updated>
     
     <content type="html"><![CDATA[<p>In this post, we will look into pass by value and pass by reference in Javascript.</p><p>Let’s see what is pass by value and pass by reference before looking into its javascript context.</p><p><strong>Pass by Value:</strong></p><p>In Pass by Value, Function is called by directly passing the value of the variable as the argument. Changing the argument inside the function doesn’t affect the variable passed from outside the function.</p><p>Javascript always pass by value so changing the value of the variable never changes the underlying primitive (String or number).</p><pre><code>function callByValue(varOne, varTwo) {   console.log(&quot;Inside Call by Value Method&quot;);   varOne = 100;   varTwo = 200;   console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); } let varOne = 10; let varTwo = 20; console.log(&quot;Before Call by Value Method&quot;); console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); callByValue(varOne, varTwo) console.log(&quot;After Call by Value Method&quot;); console.log(&quot;varOne =&quot; + varOne +&quot;varTwo =&quot; +varTwo); </code></pre><p>output will be : </p><p>Before Call by Value Method </p><p>varOne =10 varTwo =20 </p><p>Inside Call by Value Method </p><p>varOne =100 varTwo =200 </p><p>After Call by Value Method </p><p>varOne =10 varTwo =20</p><p>However, when a variable refers to an object which includes array, the value is the reference to the object.</p><p><strong>Pass by Reference:</strong></p><p>In Pass by Reference, Function is called by directly passing the reference/address of the variable as the argument. Changing the argument inside the function affect the variable passed from outside the function. In Javascript objects and arrays follows pass by reference.</p><pre><code>function callByReference(varObj) {   console.log(&quot;Inside Call by Reference Method&quot;);   varObj.a = 100;   console.log(varObj); } let varObj = {a:1};console.log(&quot;Before Call by Reference Method&quot;); console.log(varObj);callByReference(varObj) console.log(&quot;After Call by Reference Method&quot;); console.log(varObj);</code></pre><p>output will be : </p><p>Before Call by Reference Method </p><p>{a: 1} </p><p>Inside Call by Reference Method </p><p>{a: 100} </p><p>After Call by Reference Method </p><p>{a: 100}</p><p>so if we are passing object or array as an argument to the method, then there is a possibility that value of the object can change.</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://codeburst.io/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c" target="_blank" rel="external">Pass By Value And Pass By Reference In JavaScript</a></li></ol>]]></content>
     
@@ -513,32 +540,6 @@
     
     
       <category term="Life" scheme="http://haiboyu.me/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nvarchar与varchar的区别</title>
-    <link href="http://haiboyu.me/zh-Hans/2010/11/29/nvarchar%E4%B8%8Evarchar%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://haiboyu.me/zh-Hans/2010/11/29/nvarchar与varchar的区别/</id>
-    <published>2010-11-29T02:51:15.000Z</published>
-    <updated>2017-09-22T20:55:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>nvarchar与varchar的区别&amp;lt;/p&gt;</p><p>varchar[(n)]<br>长度为   n   个字节的可变长度且非   Unicode   的字符数据。n<br>必须是一个介于   1   和   8,000   之间的数值。存储大小为输入数据的字节的实际长度，而不是   n<br>个字节。所输入的数据字符长度可以为零。varchar   在   SQL-92   中的同义词为   char   varying   或<br>character   varying。</p><p>nvarchar(n)<br>包含   n<br>个字符的可变长度   Unicode   字符数据。n   的值必须介于   1   与   4,000<br>之间。字节的存储大小是所输入字符个数的两倍。所输入的数据字符长度可以为零。nvarchar   在   SQL-92   中的同义词为<br>national   char   varying   和   national   character   varying。&amp;amp;nbsp;</p><p>通俗一點就是varchar適合輸入英文和數字，nvarchar一般用做中文或其它語言的輸入，這樣到別的語系不會出現亂碼:))</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;nvarchar与varchar的区别&amp;amp;lt;/p&amp;gt;&lt;/p&gt;
-&lt;p&gt;varchar[(n)]&lt;br&gt;长度为   n   个字节的可变长度且非   Unicode   的字符数据。n&lt;br&gt;必须是一个介于   1   和   8,000   之间的数值。存储大小
-      
-    
-    </summary>
-    
-      <category term="Database" scheme="http://haiboyu.me/categories/Database/"/>
-    
-    
-      <category term="Database" scheme="http://haiboyu.me/tags/Database/"/>
     
   </entry>
   
