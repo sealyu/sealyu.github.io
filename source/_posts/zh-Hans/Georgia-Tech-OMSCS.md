@@ -2,8 +2,8 @@
 title: Georgia Tech OMSCS
 date: 2017-10-17 21:43:58
 categories:
-  - Life
-tags: Life
+  - Georgia Tech
+tags: Georgia Tech
 ---
 今天终于收到了Georgia Tech的录取通知书，不枉近半年的努力。
 

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://haiboyu.me/zh-Hans/2018/05/25/%E5%85%B3%E4%BA%8E%E6%9C%9F%E6%9D%83/</loc>
+    
+    <lastmod>2018-05-25T16:08:25.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haiboyu.me/en/2018/05/14/Probability-of-death/</loc>
+    
+    <lastmod>2018-05-14T07:40:32.623Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
+    
+    <lastmod>2018-05-09T08:30:57.803Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://haiboyu.me/en/2018/05/01/Microsoft-Interview-Algorithm-questions/</loc>
     
     <lastmod>2018-05-08T06:01:28.631Z</lastmod>
@@ -44,9 +65,9 @@
   </url>
   
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
     
-    <lastmod>2017-10-19T02:13:49.000Z</lastmod>
+    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
     
   </url>
   
@@ -58,30 +79,9 @@
   </url>
   
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
-    
-    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://haiboyu.me/about/index.html</loc>
     
     <lastmod>2017-10-08T03:46:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
-    
-    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://haiboyu.me/tags/index.html</loc>
-    
-    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
     
   </url>
   
@@ -100,7 +100,21 @@
   </url>
   
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
+    
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haiboyu.me/tags/index.html</loc>
+    
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
     
     <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     
@@ -114,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
     
     <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haiboyu.me/"/>
-  <updated>2018-05-08T06:01:28.631Z</updated>
+  <updated>2018-05-25T16:08:25.912Z</updated>
   <id>http://haiboyu.me/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于期权</title>
+    <link href="http://haiboyu.me/zh-Hans/2018/05/25/%E5%85%B3%E4%BA%8E%E6%9C%9F%E6%9D%83/"/>
+    <id>http://haiboyu.me/zh-Hans/2018/05/25/关于期权/</id>
+    <published>2018-05-25T15:47:05.000Z</published>
+    <updated>2018-05-25T16:08:25.912Z</updated>
+    
+    <content type="html"><![CDATA[<p>闲了几个月，开始安心的找工作。谈了几家公司，主要分为两类：</p><ol><li>国际化IT公司，比如Oracle、Cisco这种，工作内容会比较固定，薪资也有竞争力</li><li>创业企业，有A轮和B轮的，薪资相对不是特别高，但是会有一部分期权。</li></ol><p>之前对股份和期权不是特别了解，只是之前在和朋友讨论创业的时候聊过一些略知一二。这次系统性的研究了一下，终于有了大致的了解。</p><h2 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h2><p><strong>股份期权是以预先确定的价格在未来某一时点购买公司一定数量股份的权利。</strong></p><p>所以首先确定一点，期权不是股份。期权只是给了你一种权利，让你可以用约定好的价格在未来某一时间点购买公司一定数量股份的权利。这个时间点可能是上市或者被收购，而这个价格一般先对较低。</p><p>目前来说国内公司期权一般仿照硅谷的方式，用总股本的10% ~ 30% 设置期权池，建立一个有限合伙公司代持所有相关股份。成熟期一般4年，每年25%。一般设置一年的cliff（第一年结束才可以拿到25%）。当然，不同的公司也会根据人和阶段有不同的细则。</p><p>流程一般如下：</p><p>授予 –》 成熟 –》 行权 –》 变现</p><h2 id="期权相关的几个概念："><a href="#期权相关的几个概念：" class="headerlink" title="期权相关的几个概念："></a>期权相关的几个概念：</h2><ol><li><strong>行权价格</strong>：这个价格就是你和公司约定好的价格，一般比较低，目前国内来说可能象征性的定几毛或者一元。定的越低，给的福利越大。因为等公司上市后你可以用【股票价格-行权价格】的差值计算你的收益。但是很少有设置为行权价格为0，因为上市的时候这些都要根据审计进行调整和解释。</li><li><strong>行权时间(vesting)</strong>：何时行权</li><li><strong>股本占比</strong>：期权总量占公司总股本的比例。这个应该是根据公司估值来的，会根据具体的职位的重要性进行一定比例的分发。</li><li><strong>起算日期</strong>：什么时候开始发放期权</li><li><strong>有无cliff</strong>：一年之内不拿，第一年底一次性拿全年累积的</li></ol><h2 id="退出机制"><a href="#退出机制" class="headerlink" title="退出机制"></a>退出机制</h2><p>在持有期权的人退出公司时，双方可以提前约定好退出细则：</p><ul><li>期权回购价格</li><li>转让和出售限制</li><li>离职回购协议</li></ul><h2 id="创业公司如何分配股份期权？"><a href="#创业公司如何分配股份期权？" class="headerlink" title="创业公司如何分配股份期权？"></a>创业公司如何分配股份期权？</h2><p>硅谷的一般原则如下：外聘CEO - 5%到8%；副总 - 0.8%到1.3%；一线管理人员 - 0.25%；普通员工 - 0.1%；外聘董事会董事 - 0.25%。期权总共占公司15%到20%股份。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;闲了几个月，开始安心的找工作。谈了几家公司，主要分为两类：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;国际化IT公司，比如Oracle、Cisco这种，工作内容会比较固定，薪资也有竞争力&lt;/li&gt;
+&lt;li&gt;创业企业，有A轮和B轮的，薪资相对不是特别高，但是会有一部分期权。&lt;/li&gt;
+&lt;/o
+      
+    
+    </summary>
+    
+      <category term="Work" scheme="http://haiboyu.me/categories/Work/"/>
+    
+    
+      <category term="Work" scheme="http://haiboyu.me/tags/Work/"/>
+    
+  </entry>
   
   <entry>
     <title>Microsoft Interview Algorithm questions</title>
@@ -179,7 +208,7 @@
     <link href="http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/"/>
     <id>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</id>
     <published>2017-10-17T13:43:58.000Z</published>
-    <updated>2017-10-19T02:13:49.000Z</updated>
+    <updated>2018-05-09T08:30:57.803Z</updated>
     
     <content type="html"><![CDATA[<p>今天终于收到了Georgia Tech的录取通知书，不枉近半年的努力。</p><img src="/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/gt_coc.png" alt="Georgia Tech Online Master of Science in Computer Science" title="Georgia Tech Online Master of Science in Computer Science"><p>年初听到同事推荐Georgia Tech的<a href="http://www.omscs.gatech.edu/" target="_blank" rel="external">OMSCS</a>项目, 作为一个Computer Science在US News Ranking排名第9的专业，刚开始申请的时候确实没什么信心。不过由于online的优点和超高的性价比（学费约7000美元），还是决定申请:</p><ul><li>5月份开始准备托福考试，开始了没日没夜背单词刷题的生活</li><li>6月24号参加了托福考试，因为听力没把握好时间，最后一篇4道题目没有做，总分只拿到96分，离102的分数线还是低了6分。比较沮丧，放弃申请</li><li>8月份国内归来，报着试试看的想法，重新开始申请</li><li>一周内写完简历、Background、CareerObjective、StateOfPurpose，找同事写了3封Recommendation letter，8月18号提交申请</li><li>10月10号收到GT的decision letter</li><li>10月17号收到GT的final admission letter.</li></ul><p>现在准备开始未来两到三年没日没夜一边工作一边读书的生活了。。。</p><img src="/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/jiayou.jpeg" alt="jiayou.jpeg" title="">]]></content>
     
@@ -193,10 +222,10 @@
     
     </summary>
     
-      <category term="Life" scheme="http://haiboyu.me/categories/Life/"/>
+      <category term="Georgia Tech" scheme="http://haiboyu.me/categories/Georgia-Tech/"/>
     
     
-      <category term="Life" scheme="http://haiboyu.me/tags/Life/"/>
+      <category term="Georgia Tech" scheme="http://haiboyu.me/tags/Georgia-Tech/"/>
     
   </entry>
   
@@ -505,33 +534,6 @@
       
         &lt;p&gt;140101&lt;br&gt;m,,&lt;br&gt;mmmmmmmmmmmm&lt;br&gt;p010看过晕&lt;br&gt;ti\&lt;br&gt;9.5 不会呼唤 9 提议明年，， 男男女女男男女女男男女女男男女女年内能000000000000&lt;/p&gt;
 
-      
-    
-    </summary>
-    
-      <category term="Life" scheme="http://haiboyu.me/categories/Life/"/>
-    
-    
-      <category term="Life" scheme="http://haiboyu.me/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个句号引发的惨案</title>
-    <link href="http://haiboyu.me/zh-Hans/2011/04/01/%E4%B8%80%E4%B8%AA%E5%8F%A5%E5%8F%B7%E5%BC%95%E5%8F%91%E7%9A%84%E6%83%A8%E6%A1%88/"/>
-    <id>http://haiboyu.me/zh-Hans/2011/04/01/一个句号引发的惨案/</id>
-    <published>2011-03-31T20:40:42.000Z</published>
-    <updated>2017-09-22T20:50:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天客户对之前做的东西做了一个修改，要求是：<strong>Please add a period to the end of the message.</strong></p><p>看来看去，没想起来到底要加什么period。加一段日期进去？加什么日期呢？</p><p>问了一下，客户回复：I mean the period（。）</p><p>靠，period原来还有句号的意思，这么多年英语白学了，还以为客户的需求没给明白，汗！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天客户对之前做的东西做了一个修改，要求是：&lt;strong&gt;Please add a period to the end of the message.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;看来看去，没想起来到底要加什么period。加一段日期进去？加什么日期呢？&lt;/p&gt;
-&lt;p
       
     
     </summary>

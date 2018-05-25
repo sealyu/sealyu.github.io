@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>http://haiboyu.me/zh-Hans/2018/05/25/%E5%85%B3%E4%BA%8E%E6%9C%9F%E6%9D%83/</loc>
+    <lastmod>2018-05-25T16:08:25.912Z</lastmod>
+    <data>
+        <display>
+        <title>关于期权</title>
+        <pubTime>2018-05-25T15:47:05.000Z</pubTime>
+        
+        <tag>Work</tag>
+         
+         
+           
+             
+              <breadCrumb title="Work" url="http://haiboyu.me/categories/Work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/en/2018/05/14/Probability-of-death/</loc>
+    <lastmod>2018-05-14T07:40:32.623Z</lastmod>
+    <data>
+        <display>
+        <title>Probability of death</title>
+        <pubTime>2018-05-14T06:02:08.000Z</pubTime>
+        
+        <tag>Algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
+    <lastmod>2018-05-09T08:30:57.803Z</lastmod>
+    <data>
+        <display>
+        <title>Georgia Tech OMSCS</title>
+        <pubTime>2017-10-17T13:43:58.000Z</pubTime>
+        
+        <tag>Georgia Tech</tag>
+         
+         
+           
+             
+              <breadCrumb title="Georgia Tech" url="http://haiboyu.me/categories/Georgia-Tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://haiboyu.me/en/2018/05/01/Microsoft-Interview-Algorithm-questions/</loc>
     <lastmod>2018-05-08T06:01:28.631Z</lastmod>
     <data>
@@ -128,19 +188,19 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/17/Georgia-Tech-OMSCS/</loc>
-    <lastmod>2017-10-19T02:13:49.000Z</lastmod>
+    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
     <data>
         <display>
-        <title>Georgia Tech OMSCS</title>
-        <pubTime>2017-10-17T13:43:58.000Z</pubTime>
+        <title>二叉树相关算法</title>
+        <pubTime>2017-10-02T08:03:23.000Z</pubTime>
         
-        <tag>Life</tag>
+        <tag>Algorithm</tag>
          
          
            
              
-              <breadCrumb title="Life" url="http://haiboyu.me/categories/Life/"/>
+              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
           
         </display>
     </data>
@@ -161,47 +221,6 @@
            
              
               <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/10/02/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-10-09T20:45:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>二叉树相关算法</title>
-        <pubTime>2017-10-02T08:03:23.000Z</pubTime>
-        
-        <tag>Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="Algorithm" url="http://haiboyu.me/categories/Algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
-    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>Design Pattern 笔记 - 代理模式(Proxy Pattern)</title>
-        <pubTime>2017-09-22T08:11:21.000Z</pubTime>
-        
-        <tag>Design Pattern</tag>
-         
-         
-           
-             
-              <breadCrumb title="Design Pattern" url="http://haiboyu.me/categories/Design-Pattern/"/>
           
         </display>
     </data>
@@ -231,12 +250,33 @@
 
     
   <url>
-    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2017/09/22/Design-Pattern-Note-Proxy-Pattern/</loc>
+    <lastmod>2017-10-03T23:08:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>Design Pattern 笔记 - 代理模式(Proxy Pattern)</title>
+        <pubTime>2017-09-22T08:11:21.000Z</pubTime>
+        
+        <tag>Design Pattern</tag>
+         
+         
+           
+             
+              <breadCrumb title="Design Pattern" url="http://haiboyu.me/categories/Design-Pattern/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
     <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     <data>
         <display>
-        <title>美国费城买车小记</title>
-        <pubTime>2016-04-28T11:25:37.000Z</pubTime>
+        <title>L1 Visa renewal or extension?</title>
+        <pubTime>2016-10-11T10:09:24.000Z</pubTime>
         
         <tag>Life</tag>
          
@@ -271,12 +311,12 @@
 
     
   <url>
-    <loc>http://haiboyu.me/en/2016/10/11/l1-visa-renewal-or-extension/</loc>
+    <loc>http://haiboyu.me/zh-Hans/2016/04/28/%E7%BE%8E%E5%9B%BD%E8%B4%B9%E5%9F%8E%E4%B9%B0%E8%BD%A6%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2017-10-01T18:38:15.000Z</lastmod>
     <data>
         <display>
-        <title>L1 Visa renewal or extension?</title>
-        <pubTime>2016-10-11T10:09:24.000Z</pubTime>
+        <title>美国费城买车小记</title>
+        <pubTime>2016-04-28T11:25:37.000Z</pubTime>
         
         <tag>Life</tag>
          
